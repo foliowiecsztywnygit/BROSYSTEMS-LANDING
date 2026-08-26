@@ -44,7 +44,7 @@ const Home = () => (
     <Helmet>
       <title>Strony dla pensjonatów i willi | Rezerwacje bezpośrednie</title>
       <meta name="description" content="Buduję strony dla pensjonatów, domków i willi z systemem rezerwacji bez prowizji. Zwiększ rezerwacje bezpośrednie w Zakopanem i Szczyrku." />
-      <link rel="canonical" href="https://www.brosystems.pl/" />
+      <link rel="canonical" href="https://brosystems.pl/" />
     </Helmet>
     <TopBar />
     <Navbar />
