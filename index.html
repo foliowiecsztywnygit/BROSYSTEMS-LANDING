@@ -2,6 +2,11 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      if (window.location.hostname.includes('webbroskidev.pl')) {
+        window.location.replace('https://brosystems.pl' + window.location.pathname + window.location.search);
+      }
+    </script>
     <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strony dla pensjonatów i willi | Rezerwacje bezpośrednie</title>
