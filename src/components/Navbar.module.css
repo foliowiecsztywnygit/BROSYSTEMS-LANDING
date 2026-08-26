@@ -1,0 +1,151 @@
+.navbar {
+  position: fixed;
+  top: 36px; /* Offset na wysokość TopBara */
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 0.6rem 0;
+  transition: background-color 0.3s ease, border-bottom 0.3s ease, backdrop-filter 0.3s ease, top 0.3s ease, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+.navbar.scrolled {
+  background: rgba(10, 10, 10, 0.85); /* Dark mode navbar background */
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--gray-mid);
+  top: 0; /* Navbar dokleja się do samej góry po scrollu */
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.logoImage {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  /* usunięto filter: invert(1), bo w dark mode chcemy białe logo natywnie */
+}
+
+.navLinks {
+  display: none;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navLinks a {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+
+.navLinks a:not(.navBtn)::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--accent);
+  transition: var(--transition);
+}
+
+.navLinks a:not(.navBtn):hover::after {
+  width: 100%;
+}
+
+.navBtn {
+  border: 1px solid var(--text);
+  padding: 0.5rem 1.25rem;
+  transition: var(--transition);
+}
+
+.navBtn:hover {
+  background: var(--purple-dark);
+  border-color: var(--purple-dark);
+  color: var(--text);
+  box-shadow: 0 0 20px var(--purple-glow);
+}
+
+@media (min-width: 768px) {
+  .navLinks {
+    display: flex;
+  }
+  .navbar.hidden {
+    transform: translateY(0); /* Nie chowaj navbara na desktopach */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
+  .navbar.top .logo {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .logoImage {
+    height: 44px;
+  }
+}
+
+.mobileContactBubble {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobileContactBubble {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    gap: 10px;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+  }
+  
+  .mobileContactBubble.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  
+  .bubbleBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--purple-dark);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 15px var(--purple-glow);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .bubbleBtn:active {
+    transform: scale(0.95);
+  }
+}

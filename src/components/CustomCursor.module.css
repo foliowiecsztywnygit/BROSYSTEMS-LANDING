@@ -1,0 +1,17 @@
+.cursorWrapper {
+  position: fixed;
+  top: -6px; /* Środek kropki (12px / 2) */
+  left: -6px; /* Środek kropki (12px / 2) */
+  width: 12px;
+  height: 12px;
+  background-color: var(--purple-dark);
+  border-radius: 50%;
+  pointer-events: none; /* Kropka nie blokuje klikania w elementy pod nim */
+  z-index: 99999;
+  will-change: transform;
+  transition: opacity 0.2s ease;
+}
+
+.cursorWrapper.hidden {
+  opacity: 0;
+}

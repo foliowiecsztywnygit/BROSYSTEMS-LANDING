@@ -1,0 +1,40 @@
+.breadcrumbs {
+  padding: 1.5rem 0 0.5rem 0;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  margin: 0 0.25rem;
+  color: var(--color-border);
+}
+
+.link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--color-primary);
+}
+
+.current {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}

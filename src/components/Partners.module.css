@@ -1,0 +1,146 @@
+.partners {
+  background-color: var(--bg);
+  padding: 0rem 0 6rem 0; /* Zmniejszony górny padding, aby przybliżyć do procesu */
+  border-bottom: 1px solid var(--gray-mid);
+}
+
+.header {
+  margin-bottom: 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.marqueeWrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  padding: 1rem 0; /* Odstęp żeby hover transform nie obcinał kart */
+  
+  /* Maskowanie z obu stron, aby pasek wyłaniał się z ciemności */
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: scroll 60s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+.marqueeGroup {
+  display: flex;
+  gap: 3rem;
+  padding-right: 3rem; /* Musi odpowiadać wielkości gap */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.partnerItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  padding: 0 2rem;
+  cursor: default;
+}
+
+.imageWrapper {
+  position: relative;
+  max-height: 45px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnerLogo {
+  max-height: 45px;
+  max-width: 180px;
+  object-fit: contain;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  position: absolute;
+}
+
+.whiteLogo {
+  opacity: 1;
+  scale: 160%;
+}
+
+.colorLogo {
+  opacity: 0;
+}
+
+/* .partnerItem:hover .whiteLogo {
+  opacity: 0;
+  transform: scale(1.05);
+} */
+
+/* .partnerItem:hover .colorLogo {
+  opacity: 1;
+  transform: scale(1.05);
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--gray-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.4s ease, transform 0.4s ease;
+} */
+
+/* .partnerItem:hover .partnerName {
+  color: var(--text);
+  transform: scale(1.05);
+} */
+
+@media (max-width: 768px) {
+  .marqueeGroup {
+    gap: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .partnerItem {
+    padding: 0 1rem;
+    height: 60px;
+  }
+  
+  .partnerLogo {
+    max-height: 35px;
+    max-width: 140px;
+  }
+  
+  .partnerName {
+    font-size: 1.125rem;
+  }
+}

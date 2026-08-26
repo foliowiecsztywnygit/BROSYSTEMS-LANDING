@@ -1,0 +1,70 @@
+.footer {
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 5rem 0 3rem;
+  border-top: 1px solid var(--gray-mid);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.authorName {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin: 0;
+}
+
+.seoFooterText {
+  font-size: 0.875rem;
+  color: var(--gray-dark);
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.legalInfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--gray-dark);
+  font-weight: 500;
+}
+
+.legalInfo a {
+  color: var(--gray-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.legalInfo a:hover {
+  color: var(--text);
+}
+
+.separator {
+  opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .legalInfo {
+    gap: 1rem;
+  }
+}

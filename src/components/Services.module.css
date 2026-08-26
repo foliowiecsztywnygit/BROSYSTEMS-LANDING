@@ -1,0 +1,203 @@
+.services {
+  background-color: var(--bg);
+  /* Zmieniony padding */
+  padding: 8rem 0;
+  position: relative;
+  /* USUNIĘTO overflow-x: hidden - blokuje to działanie position: sticky na kartach! */
+  overflow-x: clip; 
+}
+
+.headerWrapper {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header {
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.header p {
+  color: var(--gray-dark);
+}
+
+.header strong {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.cardsContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* Usunięty całkowicie padding-bottom by wyeliminować gap między sekcjami */
+  padding-bottom: 0;
+}
+
+.card {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: auto; /* Zmienione z 100vh na auto, by karta dostosowała się do treści */
+  min-height: 50vh; /* Zapewnia minimalną przestrzeń by karty ładnie wyglądały na sobie */
+  background-color: var(--bg);
+  border-top: 1px dashed var(--gray-mid);
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.cardInner {
+  width: 100%;
+  max-width: 1571px;
+  padding: 80px 40px; /* Zwiększony pionowy padding z 40px na 80px by wypełnić przestrzeń w naturalny sposób, bez sztywnego 100vh */
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  gap: 4rem;
+  align-items: flex-start; /* Zmienione z center na flex-start, by tekst i numer naturalnie siedziały na górze */
+}
+
+@media (max-width: 1024px) {
+  .cardInner {
+    grid-template-columns: 1fr;
+    text-align: left;
+    padding: 40px 20px;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 4rem 0;
+  }
+
+  .header {
+    margin-bottom: 3rem;
+  }
+
+  .cardInner {
+    padding: 30px 15px;
+    gap: 1rem;
+    word-wrap: break-word; /* Zabezpieczenie przed wychodzeniem tekstu */
+  }
+  
+  .cardTitle {
+    font-size: clamp(1.25rem, 6vw, 1.75rem);
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .cardDescription {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    padding-right: 0.5rem; /* Delikatny margines dla poprawy czytelności z boku */
+  }
+
+  .categories {
+    gap: 0.4rem;
+    margin-top: 1.25rem;
+  }
+  
+  .categoryTag {
+    font-size: 0.6875rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .number {
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.number {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text); /* Biały kolor z motywu */
+  align-self: flex-start; /* Do góry względem kontentu */
+  margin-top: 1rem; /* Lekkie wyrównanie do wysokości tytułu */
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardTitle {
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-weight: 700;
+  text-transform: none;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.15);
+  -webkit-text-stroke: 0px;
+  background-image: linear-gradient(to right, var(--text) 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: background-position 0.1s ease-out;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.cardDescription {
+  color: var(--gray-dark);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  max-width: 800px; /* Zwiększona szerokość dla dłuższego tekstu w 2-kolumnowym layoucie */
+  margin-bottom: 2.5rem;
+}
+
+.cardDescription strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  max-width: 900px;
+}
+
+.categoryTag {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text);
+  background-color: transparent;
+  border: 1px solid var(--gray-mid);
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.categoryTag:hover {
+  background-color: var(--text);
+  color: var(--bg);
+  border-color: var(--text);
+}
+
+/* Usunięto reguły .cardVisual, .visualPattern, .visualShape ponieważ zostały całkowicie wycięte z layoutu */

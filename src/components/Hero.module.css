@@ -1,0 +1,349 @@
+.hero {
+  min-height: calc(100svh - var(--hero-offset, 96px));
+  height: calc(100svh - var(--hero-offset, 96px));
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: clamp(1.5rem, 3vh, 2.75rem);
+  padding-bottom: clamp(1rem, 2.5vh, 1.8rem);
+  background-attachment: fixed;
+  border-bottom: 1px solid var(--gray-mid);
+  overflow: hidden; /* żeby Waves nie wychodziło poza sekcję */
+}
+
+.wavesWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.68;
+  pointer-events: none;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  padding-top: clamp(2rem, 5vh, 4rem);
+}
+
+.heroContent {
+  max-width: 760px;
+  position: relative;
+  z-index: 10;
+}
+
+.heroContent::before {
+  content: '';
+  position: absolute;
+  inset: -8% -10% -14% -6%;
+  background:
+    radial-gradient(circle at 22% 28%, rgba(255, 255, 255, 0.18), transparent 30%),
+    radial-gradient(circle at 45% 48%, rgba(160, 32, 240, 0.22), transparent 32%);
+  filter: blur(34px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.compact {
+  max-width: 920px;
+}
+
+.compact .title {
+  max-width: 100%;
+}
+
+.title {
+  margin-bottom: 0.85rem;
+  font-size: clamp(2.2rem, 2rem + 3.8vw, 6rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  text-transform: none;
+  max-width: 100%;
+  text-wrap: balance;
+}
+
+.titleLine {
+  display: block;
+}
+
+.title strong {
+  font-weight: 800;
+  text-transform: none;
+}
+
+@media (min-width: 769px) {
+  .compact {
+    margin-left: clamp(2.5rem, 5vw, 4.5rem);
+  }
+}
+
+.description {
+  margin-bottom: 1rem;
+  max-width: 700px;
+  color: var(--gray-dark);
+  font-size: clamp(0.9rem, 0.82rem + 0.35vw, 0.98rem);
+  line-height: 1.45;
+}
+
+.descriptionCompact {
+  max-width: 620px;
+  margin-bottom: 0.8rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  /* Pozwala filtrowi gooey rozszerzyć się poza krawędź przycisku */
+  padding: 10px;
+  margin: -10px;
+}
+
+.actionsCompact {
+  margin-top: 0.35rem;
+}
+
+.inlineLink {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-heading);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+  min-height: 34px;
+}
+
+.inlineLink:hover {
+  color: var(--purple-dark);
+}
+
+.scrollDown {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.scrollText {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: var(--gray-dark);
+}
+
+.line {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--purple-dark) 50%, transparent 50%);
+  background-size: 100% 200%;
+  animation: drawLine 2s infinite linear;
+}
+
+@keyframes drawLine {
+  0% { background-position: 0 100%; }
+  100% { background-position: 0 -100%; }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-attachment: scroll;
+    min-height: calc(100svh - var(--hero-offset, 96px));
+    height: calc(100svh - var(--hero-offset, 96px));
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+
+  .title {
+    font-size: clamp(1.4rem, 6vw, 2.1rem);
+    word-break: keep-all;
+    overflow-wrap: normal;
+    hyphens: none;
+    letter-spacing: -0.02em;
+  }
+
+  .title strong {
+    font-size: clamp(1.15rem, 5vw, 1.8rem);
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .actions .btn {
+    width: 100%;
+  }
+
+  .heroContent::before {
+    inset: -6% -8% -10% -4%;
+    filter: blur(22px);
+  }
+}
+
+@media (max-height: 860px) {
+  .hero {
+    padding-top: 2rem;
+    padding-bottom: 1.4rem;
+  }
+
+  .title {
+    font-size: clamp(2rem, 1.9rem + 3vw, 4.8rem);
+    max-width: 100%;
+  }
+
+  .description {
+    max-width: 640px;
+    font-size: 1rem;
+    line-height: 1.38;
+  }
+}
+
+@media (max-height: 820px) {
+  .hero {
+    align-items: flex-start;
+    padding-top: 2.25rem;
+    padding-bottom: 0.85rem;
+  }
+
+  .heroContainer {
+    justify-content: flex-start;
+    padding-top: clamp(2.2rem, 7vh, 3.4rem);
+  }
+
+  .heroContent {
+    max-width: 680px;
+  }
+
+  .compact {
+    max-width: 860px;
+    margin-top: clamp(2.8rem, 8vh, 4rem);
+  }
+
+  .title {
+    margin-bottom: 0.65rem;
+    font-size: clamp(1.8rem, 1.8rem + 2.5vw, 4rem);
+    line-height: 1.1;
+    max-width: 100%;
+  }
+
+  .compact .title {
+    max-width: 100%;
+    font-size: clamp(1.9rem, 1.85rem + 2.4vw, 4rem);
+  }
+
+  .description {
+    max-width: 620px;
+    font-size: 0.95rem;
+    line-height: 1.3;
+  }
+
+  .actions {
+    gap: 0.7rem;
+    padding: 6px;
+    margin: -6px;
+  }
+
+  .actionsCompact {
+    align-items: center;
+    margin-top: 0.1rem;
+  }
+}
+
+@media (max-height: 720px) {
+  .hero {
+    padding-top: 1.5rem;
+    padding-bottom: 0.65rem;
+  }
+
+  .title {
+    margin-bottom: 0.55rem;
+    font-size: clamp(1.6rem, 1.6rem + 2vw, 3.2rem);
+    max-width: 100%;
+  }
+
+  .compact .title {
+    max-width: 100%;
+    font-size: clamp(1.7rem, 1.7rem + 1.8vw, 3.2rem);
+  }
+
+  .compact {
+    margin-top: 2rem;
+  }
+
+  .description {
+    margin-bottom: 0.65rem;
+    max-width: 580px;
+    font-size: 0.9rem;
+    line-height: 1.24;
+  }
+
+  .actions {
+    gap: 0.55rem;
+  }
+
+  .actionsCompact {
+    margin-top: 0;
+  }
+
+  .inlineLink {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-height: 700px) {
+  .hero {
+    padding-top: 1.35rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .heroContainer {
+    padding-top: 1.15rem;
+  }
+
+  .title {
+    font-size: clamp(1.4rem, 1.5rem + 1.5vw, 2.8rem);
+    line-height: 1.1;
+    max-width: 100%;
+  }
+
+  .compact .title {
+    max-width: 100%;
+    font-size: clamp(1.5rem, 1.55rem + 1.4vw, 2.8rem);
+  }
+
+  .compact {
+    margin-top: 1.4rem;
+  }
+
+  .actionsCompact {
+    margin-top: -0.05rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero {
+    background-attachment: scroll;
+  }
+}

@@ -1,0 +1,113 @@
+.aboutMe {
+  padding: 8rem 0;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--gray-mid);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 3fr 7fr;
+    gap: 6rem;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.title {
+  max-width: 420px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.textContent p {
+  font-family: var(--font-body);
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  line-height: 1.5;
+  color: var(--gray-dark);
+  font-weight: 500;
+}
+
+.textContent p:first-child {
+  color: var(--text);
+}
+
+.textContent strong {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.segmentGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.segmentCard {
+  border: 1px solid var(--gray-mid);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.segmentCard h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.segmentCard p {
+  color: var(--gray-dark);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .textContent p {
+    font-size: 1.05rem;
+  }
+
+  .segmentGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+  
+  .actions > * {
+    width: 100%;
+  }
+}

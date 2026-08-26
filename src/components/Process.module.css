@@ -1,0 +1,172 @@
+.process {
+  background-color: var(--bg);
+  /* Usuwamy domyślne paddingi, zrobimy to sticky wrapperem */
+  position: relative;
+  /* Ten container decyduje ile przewijamy w dół by wypełnić animację - 250vh = 2.5 ekranu scrollowania */
+  height: 250vh; 
+}
+
+.stickyWrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.title {
+  margin-bottom: 4rem;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* LINIA PROCESU */
+.line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2rem;
+  width: 4px; /* Pogrubiona linia */
+  background-color: var(--gray-mid);
+  z-index: 1;
+}
+
+/* CZARNY PROGRESS */
+.lineProgress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--purple-dark);
+  height: 0;
+  transition: height 0.1s linear;
+}
+
+/* STRZAŁKA */
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  border-right: 4px solid var(--purple-dark);
+  border-bottom: 4px solid var(--purple-dark);
+  transform-origin: center;
+  rotate: 45deg; /* By wskazywała dół */
+  margin-bottom: -8px; 
+  background-color: transparent;
+  z-index: 2;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Zmniejszone odstępy na mobile */
+  padding-left: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* POJEDYNCZY KROK */
+.step {
+  opacity: 0.2;
+  transform: translateY(20px);
+  transition: all 0.6s cubic-bezier(0.2, 0, 0.2, 1);
+  position: relative;
+}
+
+.step.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stepContent {
+  position: relative;
+}
+
+.stepNumber {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  
+  /* Efekt Outline do wypełniania */
+  color: transparent;
+  -webkit-text-stroke: 2px var(--gray-mid);
+  
+  /* Przygotowanie gradientu wypełniającego z dołu do góry */
+  background-image: linear-gradient(to top, var(--text) 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: 0 0; /* Zmieniane przez JS na 0 100% */
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  transition: background-position 0.2s ease-out; /* Płynne podążanie za scrollem */
+}
+
+/* Kiedy karta jest po prostu .active (ale fill zarządza skrypt) */
+.step.active .stepNumber {
+  -webkit-text-stroke: 2px var(--gray-dark); /* Lekko ciemniejszy outline po aktywacji sekcji */
+}
+
+.stepTitle {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stepDesc {
+  color: var(--gray-dark);
+  font-size: 1.125rem;
+  max-width: 400px;
+}
+
+.stepDesc strong {
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* DESKTOP RESPONSIVE */
+@media (min-width: 768px) {
+  .line {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .steps {
+    padding-left: 0;
+    gap: 0;
+  }
+
+  .step {
+    width: 50%;
+    padding: 1.5rem 0; /* Zmniejszone paddingi na desktop aby zbliżyć je do siebie */
+  }
+
+  .stepLeft {
+    padding-right: 4rem;
+    text-align: right;
+    align-self: flex-start;
+  }
+
+  .stepLeft .stepDesc {
+    margin-left: auto;
+  }
+
+  .stepRight {
+    padding-left: 4rem;
+    margin-left: 50%;
+    text-align: left;
+  }
+}

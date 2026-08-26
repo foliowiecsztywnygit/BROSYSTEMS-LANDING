@@ -1,0 +1,120 @@
+.faqSection {
+  background-color: var(--bg);
+  padding: 8rem 0;
+  border-top: 1px solid var(--gray-mid);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  margin-top: 1rem;
+}
+
+.lead {
+  margin-top: 1.25rem;
+  color: var(--gray-dark);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.accordionContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.accordionItem {
+  background: transparent;
+  border: 1px solid var(--gray-mid);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordionItem:hover {
+  border-color: var(--purple-dark);
+}
+
+.accordionItem.active {
+  border-color: var(--purple-dark);
+  background: rgba(147, 51, 234, 0.05); /* lekki fioletowy tint */
+}
+
+.accordionHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text);
+  text-align: left;
+  transition: color 0.3s ease;
+}
+
+.accordionHeader:hover .question {
+  color: var(--purple-dark);
+}
+
+.question {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  padding-right: 1.5rem;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.icon {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--purple-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--gray-mid);
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.accordionItem.active .icon {
+  background: var(--purple-dark);
+  color: var(--bg);
+  border-color: var(--purple-dark);
+}
+
+.accordionBody {
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.answer {
+  padding: 0 1.5rem 1.5rem;
+  color: var(--gray-dark);
+  line-height: 1.6;
+}
+
+.answer p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .question {
+    font-size: 1.25rem;
+  }
+}

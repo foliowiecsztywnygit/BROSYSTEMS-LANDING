@@ -1,0 +1,60 @@
+.benefits {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.header {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.header p {
+  color: var(--gray-light);
+  opacity: 0.8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 3rem;
+}
+
+.card {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--bg);
+  font-weight: 700;
+}
+
+.cardDesc {
+  color: var(--gray-light);
+  font-size: 1.125rem;
+  opacity: 0.9;
+}
+
+.cardDesc strong {
+  color: var(--bg);
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    row-gap: 3rem;
+  }
+}
