@@ -152,7 +152,7 @@ const CTA = () => {
               ></div>
             ) : (
               <div className={styles.calendarPlaceholder}>
-                <p>Wczytuję kalendarz konsultacji. Sekcja ładuje się dopiero przy kontakcie, żeby strona startowała szybciej na urządzeniach mobilnych.</p>
+                <p>Ładowanie kalendarza...</p>
               </div>
             )}
           </div>
