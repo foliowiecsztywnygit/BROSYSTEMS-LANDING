@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import GooeyButton from '../components/ui/GooeyButton';
 import { servicePageMap } from '../data/servicePages';
-import { blogPostMap } from '../data/blogPosts';
+import { getBlogPost } from '../utils/blog';
 import Breadcrumbs from '../components/Breadcrumbs';
 import styles from './ContentHub.module.css';
 
@@ -91,7 +91,7 @@ const ServicePage = ({ pageKey }) => {
                 <div className={styles.linkList}>
                   {page.relatedPosts.map((post) => (
                     <Link key={post} to={post} className={styles.linkItem}>
-                      {blogPostMap[post.replace('/blog/', '')]?.title ?? post.replace('/blog/', '').replaceAll('-', ' ')}
+                      {getBlogPost(post.replace('/blog/', ''))?.title ?? post.replace('/blog/', '').replaceAll('-', ' ')}
                     </Link>
                   ))}
                 </div>

@@ -4,11 +4,13 @@ import TopBar from '../components/TopBar';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import GooeyButton from '../components/ui/GooeyButton';
-import { blogPosts } from '../data/blogPosts';
+import { getBlogPosts } from '../utils/blog';
 import Breadcrumbs from '../components/Breadcrumbs';
 import styles from './ContentHub.module.css';
 
 const BlogIndex = () => {
+  const blogPosts = getBlogPosts();
+
   return (
     <>
       <Helmet>

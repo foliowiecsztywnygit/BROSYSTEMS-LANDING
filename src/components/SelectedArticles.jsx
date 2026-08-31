@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import { blogPosts } from '../data/blogPosts';
+import { getBlogPosts } from '../utils/blog';
 import SectionSubtitle from './ui/SectionSubtitle';
 import styles from './SelectedArticles.module.css';
 
 const SelectedArticles = () => {
   // We take the first 3 articles for the home page
-  const selectedPosts = blogPosts.slice(0, 3);
+  const selectedPosts = getBlogPosts().slice(0, 3);
 
   return (
     <section className={styles.section}>

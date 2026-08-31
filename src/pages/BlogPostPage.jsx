@@ -1,25 +1,25 @@
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 import TopBar from '../components/TopBar';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import GooeyButton from '../components/ui/GooeyButton';
-import { blogPostMap } from '../data/blogPosts';
+import { getBlogPost, getRelatedPosts } from '../utils/blog';
 import NotFound from './NotFound';
 import Breadcrumbs from '../components/Breadcrumbs';
 import styles from './ContentHub.module.css';
 
 const BlogPostPage = () => {
   const { slug } = useParams();
-  const post = blogPostMap[slug];
+  const post = getBlogPost(slug);
 
   if (!post) {
     return <NotFound />;
   }
 
-  const relatedPosts = (post.relatedSlugs || [])
-    .map((relatedSlug) => blogPostMap[relatedSlug])
-    .filter(Boolean);
+  const relatedPosts = getRelatedPosts(post.relatedSlugs);
 
   return (
     <>
@@ -41,7 +41,7 @@ const BlogPostPage = () => {
                 <span>{post.readTime}</span>
                 <span>{post.updatedAt}</span>
               </div>
-              <p className={styles.intro}>{post.intro}</p>
+              <p className={styles.intro}>{post.excerpt}</p>
             </div>
 
             <aside className={styles.statsCard}>
@@ -51,31 +51,16 @@ const BlogPostPage = () => {
               </div>
               <div>
                 <p className={styles.statLabel}>Co dalej</p>
-                <p className={styles.statValue}>{post.cta.description}</p>
+                <p className={styles.statValue}>{post.ctaDescription}</p>
               </div>
             </aside>
           </section>
 
           <section className={styles.gridTwo}>
             <article className={`${styles.contentCol} ${styles.sectionSpacing}`}>
-              {post.sections.map((section) => (
-                <section key={section.heading} className={styles.sectionCard}>
-                  <h2>{section.heading}</h2>
-                  {section.paragraphs.map((paragraph, idx) => {
-                    if (paragraph === 'CTA_BUTTON') {
-                      return (
-                        <div key={idx} style={{ margin: '2.5rem 0' }}>
-                          <GooeyButton href="/oferta" variant="outline" style={{ display: 'block', textAlign: 'center' }}>
-                            Nie chcesz uczyć się skomplikowanych systemów? Wdrożymy to dla Ciebie za 250 zł/mc. Sprawdź demo.
-                          </GooeyButton>
-                        </div>
-                      );
-                    }
-                    if (paragraph.startsWith('Autor: ')) {
-                      return <p key={idx} style={{ fontStyle: 'italic', marginTop: '2rem', textAlign: 'right' }}><strong>{paragraph}</strong></p>;
-                    }
-                    return <p key={idx}>{paragraph}</p>;
-                  })}
+              {post.content.split(/(?=^##\s)/m).filter(c => c.trim() !== '').map((chunk, idx) => (
+                <section key={idx} className={styles.sectionCard}>
+                  <ReactMarkdown rehypePlugins={[rehypeRaw]}>{chunk}</ReactMarkdown>
                 </section>
               ))}
             </article>
@@ -93,10 +78,10 @@ const BlogPostPage = () => {
               </div>
 
               <div className={styles.asideCard}>
-                <h3>{post.cta.title}</h3>
-                <p>{post.cta.description}</p>
+                <h3>{post.ctaTitle}</h3>
+                <p>{post.ctaDescription}</p>
                 <div className={styles.heroActions}>
-                  <GooeyButton href={post.cta.href} variant="outline">{post.cta.label}</GooeyButton>
+                  <GooeyButton href={post.ctaHref} variant="outline">{post.ctaLabel}</GooeyButton>
                   <GooeyButton href="/#kontakt" variant="outline">Porozmawiajmy</GooeyButton>
                 </div>
               </div>
