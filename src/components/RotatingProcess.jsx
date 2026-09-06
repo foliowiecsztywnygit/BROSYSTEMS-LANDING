@@ -14,7 +14,7 @@ const RotatingProcess = () => {
       <div className={`container ${styles.container}`}>
         <div className={styles.header}>
           <SectionSubtitle>System i Onboarding</SectionSubtitle>
-          <h2 className={`heading-lg ${styles.mainTitle}`}>Prosty system i wsparcie w 3 krokach</h2>
+          <h2 className={`heading-lg ${styles.mainTitle}`}>Prosty system i wsparcie w 4 krokach</h2>
           <p className={styles.lead}>
             Zamiast skomplikowanych procedur, proponuję prosty układ. Otrzymujesz gotowy system do sprzedaży i pełne szkolenie z jego obsługi.
           </p>
