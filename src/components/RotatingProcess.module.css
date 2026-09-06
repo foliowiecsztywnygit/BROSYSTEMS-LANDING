@@ -29,7 +29,7 @@
 
 .lead {
   margin-top: 1.25rem;
-  color: var(--gray-dark);
+  color: var(--text-muted);
   font-size: 1.05rem;
   line-height: 1.75;
   max-width: 68ch;
@@ -80,7 +80,7 @@
 
 .stepContent {
   width: calc(50% - 4rem); /* Pół szerokości minus odstęp od środka */
-  border: 1px solid var(--gray-mid);
+  border: 1px solid var(--border);
   border-radius: 1.25rem;
   padding: 2.5rem;
   background: rgba(255, 255, 255, 0.03);
@@ -97,7 +97,7 @@
 .stepId {
   display: inline-block;
   margin-bottom: 0.75rem;
-  color: var(--purple-dark);
+  color: var(--accent);
   font-family: var(--font-heading);
   font-size: 1.2rem;
   font-weight: 800;
@@ -112,7 +112,7 @@
 }
 
 .stepDesc {
-  color: var(--gray-dark);
+  color: var(--text-muted);
   line-height: 1.75;
   font-size: 1.05rem;
   text-wrap: pretty;

@@ -5,11 +5,11 @@ metaDescription: "Popraw widoczność swojego obiektu w wynikach wyszukiwania dz
 slug: "5-krokow-do-efektywnego-seo-lokalnego-dla-domkow-i-pensjonatow-na-podhalu"
 category: "Poradniki"
 readTime: "4 min"
-updatedAt: "1 wrze�nia 2026"
+updatedAt: "1 września 2026"
 excerpt: "Popraw widoczność swojego obiektu w wynikach wyszukiwania dzięki skutecznym strategiom SEO lokalne na Podhalu."
 relatedSlugs: ["strona-to-wizytowka-czy-maszyna-do-zarabiania-3-bledy", "dlaczego-turysci-wola-rezerwowac-bezposrednio"]
-ctaTitle: "Chcesz zaktualizowa� swoj� stron�?"
-ctaDescription: "Zbuduj� dla Ciebie szybk�, nowoczesn� witryn�."
+ctaTitle: "Chcesz zaktualizować swoją stronę?"
+ctaDescription: "Zbuduję dla Ciebie szybką, nowoczesną witrynę."
 ctaLabel: "Porozmawiajmy"
 ctaHref: "/#kontakt"
 ---

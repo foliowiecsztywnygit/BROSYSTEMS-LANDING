@@ -5,11 +5,11 @@ metaDescription: "Dowiedz się, jak lokalne SEO może znacząco zwiększyć wido
 slug: "5-sposobow-na-zwiekszenie-widocznosci-dzieki-lokalnemu-seo"
 category: "Poradniki"
 readTime: "4 min"
-updatedAt: "6 wrze�nia 2026"
+updatedAt: "6 września 2026"
 excerpt: "Dowiedz się, jak lokalne SEO może znacząco zwiększyć widoczność Twojego pensjonatu w internecie."
 relatedSlugs: ["strona-to-wizytowka-czy-maszyna-do-zarabiania-3-bledy", "dlaczego-turysci-wola-rezerwowac-bezposrednio"]
-ctaTitle: "Chcesz zaktualizowa� swoj� stron�?"
-ctaDescription: "Zbuduj� dla Ciebie szybk�, nowoczesn� witryn�."
+ctaTitle: "Chcesz zaktualizować swoją stronę?"
+ctaDescription: "Zbuduję dla Ciebie szybką, nowoczesną witrynę."
 ctaLabel: "Porozmawiajmy"
 ctaHref: "/#kontakt"
 ---

@@ -5,11 +5,11 @@ metaDescription: "Dowiedz się, jak nowoczesny system rezerwacji może zwiększy
 slug: "jak-wprowadzic-nowoczesny-system-rezerwacji-na-strone"
 category: "Poradniki"
 readTime: "4 min"
-updatedAt: "2 wrze�nia 2026"
+updatedAt: "2 września 2026"
 excerpt: "Dowiedz się, jak nowoczesny system rezerwacji może zwiększyć zyski Twojego obiektu noclegowego."
 relatedSlugs: ["strona-to-wizytowka-czy-maszyna-do-zarabiania-3-bledy", "dlaczego-turysci-wola-rezerwowac-bezposrednio"]
-ctaTitle: "Chcesz zaktualizowa� swoj� stron�?"
-ctaDescription: "Zbuduj� dla Ciebie szybk�, nowoczesn� witryn�."
+ctaTitle: "Chcesz zaktualizować swoją stronę?"
+ctaDescription: "Zbuduję dla Ciebie szybką, nowoczesną witrynę."
 ctaLabel: "Porozmawiajmy"
 ctaHref: "/#kontakt"
 ---

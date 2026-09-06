@@ -2,9 +2,10 @@ import SectionSubtitle from './ui/SectionSubtitle';
 import styles from './RotatingProcess.module.css';
 
 const steps = [
-  { id: '01', title: 'System', desc: 'Wdrażamy sprawdzony <strong>system rezerwacji bezpośrednich</strong>. Zyskujesz czytelną stronę, która od razu sprzedaje, bez prowizji dla pośredników i z pełną kontrolą nad kalendarzem.' },
-  { id: '02', title: 'Onboarding', desc: 'Nie zostawiam Cię z tym samego. Przechodzimy przez <strong>pełny onboarding</strong>: wspólnie konfigurujemy płatności, podłączamy cenniki i pokazuję Ci, jak prosto zarządzać rezerwacjami w panelu.' },
-  { id: '03', title: 'Start', desc: 'Po testach i dopięciu szczegółów, <strong>odpalamy sprzedaż</strong>. Od tego momentu goście mogą łatwo sprawdzić dostępność i zarezerwować pobyt bezpośrednio u Ciebie.' }
+  { id: '01', title: 'Rozmowa i plan', desc: 'W rozmowie, najczęściej telefonicznej, ustalamy szczegóły i dobieramy <strong>odpowiedni plan działania</strong> oraz <strong>plan subskrypcji</strong>. Zajmuję się przygotowaniem podglądu strony.' },
+  { id: '02', title: 'Półmetek i płatność', desc: 'Po zapoznaniu się z podglądem strony, przechodzimy do płatności <strong>wygodnym linkiem</strong>. Po subskrypcji wykupuję domenę, podpinam system, tworzymy wszystkie potrzebne konta i wprowadzam na bieżąco poprawki na życzenie.' },
+  { id: '03', title: 'Szkolenie i start', desc: 'Krótko przeszkalam cię jak korzystać ze <strong>strony, channel managera i systemu</strong>. Optymalizujemy wizytówkę google i finalnie odpalamy sprzedaż. <strong>Pierwsze zapytania</strong> z strony czy google przychodzą średnio <strong>1-2 miesiącach od startu strony</strong> a ich liczba <strong>stale rośnie</strong>.' },
+  { id: '04', title: 'Stały rozwój', desc: 'System <strong>automatycznie wrzuca blogi</strong> i dba o pozycje strony. Ja zajmuję się twoim systemem żeby pracował <strong>24h/7</strong> a ty <strong>tym co ważne ;)</strong>' }
 ];
 
 const RotatingProcess = () => {

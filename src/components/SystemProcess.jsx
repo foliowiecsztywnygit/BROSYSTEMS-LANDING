@@ -70,12 +70,7 @@ export default function SystemProcess() {
                 </div>
               </div>
               <div className={styles.imageContent}>
-                <img 
-                  src={`/systemworks/${step.id}.png`} 
-                  alt={step.imageAlt} 
-                  className={styles.actualImage} 
-                  loading="lazy"
-                />
+                <img src={`/systemworks/${step.id}.png`} alt={step.imageAlt} className={styles.actualImage} loading="lazy" />
               </div>
             </div>
           ))}

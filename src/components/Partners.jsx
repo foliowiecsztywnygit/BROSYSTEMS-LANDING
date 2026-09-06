@@ -23,8 +23,9 @@ const Partners = () => {
         <div className={`${styles.header} reveal fade-in`}>
           <SectionSubtitle>Narzędzia i Integracje</SectionSubtitle>
           <h2 className={`heading-lg ${styles.title}`}>Partnerzy Techniczni</h2>
+          <h3 className={`subtitle ${styles.subtitle}`}>Żeby było wiadomo, że jesteśmy na serio.</h3>
         </div>
-        
+
         <div className={`${styles.marqueeWrapper} reveal fade-in delay-100`}>
           <div className={styles.marquee}>
             <div className={styles.marqueeGroup}>

@@ -5,11 +5,11 @@ metaDescription: "Zobacz, jak WooCommerce może pomóc w zarządzaniu rezerwacja
 slug: "jak-wykorzystac-woocommerce-jako-system-rezerwacji"
 category: "Poradniki"
 readTime: "4 min"
-updatedAt: "5 wrze�nia 2026"
+updatedAt: "5 września 2026"
 excerpt: "Zobacz, jak WooCommerce może pomóc w zarządzaniu rezerwacjami bezpośrednimi w Twoim pensjonacie lub domku w 2026 roku."
 relatedSlugs: ["strona-to-wizytowka-czy-maszyna-do-zarabiania-3-bledy", "dlaczego-turysci-wola-rezerwowac-bezposrednio"]
-ctaTitle: "Chcesz zaktualizowa� swoj� stron�?"
-ctaDescription: "Zbuduj� dla Ciebie szybk�, nowoczesn� witryn�."
+ctaTitle: "Chcesz zaktualizować swoją stronę?"
+ctaDescription: "Zbuduję dla Ciebie szybką, nowoczesną witrynę."
 ctaLabel: "Porozmawiajmy"
 ctaHref: "/#kontakt"
 ---
