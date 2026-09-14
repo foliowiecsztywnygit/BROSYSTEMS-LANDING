@@ -37,7 +37,7 @@ Bezpośrednie rezerwacje to oszczędność na prowizjach pobieranych przez serwi
 - **Prosty system rezerwacji**: Upewnij się, że goście mogą łatwo zarezerwować pobyt przez Twoją stronę.
 - **Automatyzacja procedur**: Usprawnij proces rezerwacji dzięki integracjom z Hotres czy Roomadmin.
 
-<a href="/kontakt" class="blog-cta">Zbudujemy to dla Ciebie za 250zł/mc. Sprawdź demo. ↗</a>
+<a href="/demo" class="blog-cta">Zobacz jak działa system rezerwacji na żywo. Sprawdź demo. ↗</a>
 
 ## 4. Komunikacja z Gośćmi
 

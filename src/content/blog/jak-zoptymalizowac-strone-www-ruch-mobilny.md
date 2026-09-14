@@ -5,7 +5,7 @@ metaDescription: "Dowiedz się, jak zoptymalizować stronę WWW dla ruchu mobiln
 slug: "jak-zoptymalizowac-strone-www-ruch-mobilny"
 category: "Technika, która sprzedaje"
 readTime: "6 min"
-updatedAt: "10 wrzesień 2026"
+updatedAt: "10 września 2026"
 excerpt: "Odkryj, jak optymalizacja strony WWW pod kątem urządzeń mobilnych może zwiększyć liczbę rezerwacji w Twoim obiekcie noclegowym. Poznaj kluczowe kroki, które warto wdrożyć już dziś."
 relatedSlugs: ["dlaczego-strona-responsywna-to-klucz-do-sukcesu", "jak-wprowadzic-nowoczesny-system-rezerwacji"]
 ctaTitle: "Chcesz zwiększyć rezerwacje?"

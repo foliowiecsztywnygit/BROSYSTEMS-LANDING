@@ -1,8 +1,17 @@
 ---
 title: "Jak Optymalizować Stronę Internetową dla Pensjonatu Pod Kątem Rezerwacji Bezpośrednich"
-description: "Dowiedz się, jak zwiększyć liczbę rezerwacji bezpośrednich i zaoszczędzić na prowizjach dzięki optymalizacji strony."
-date: "2026-09-01"
+metaTitle: "Optymalizacja strony pensjonatu pod rezerwacje bezpośrednie | BroSystems"
+metaDescription: "Dowiedz się, jak zwiększyć liczbę rezerwacji bezpośrednich i zaoszczędzić na prowizjach dzięki optymalizacji strony."
 slug: "jak-optymalizowac-strone-pensjonatu-rezerwacje-bezposrednie"
+category: "Poradniki"
+readTime: "5 min"
+updatedAt: "1 września 2026"
+excerpt: "Strona Twojego pensjonatu może przyciągać gości bezpośrednio, bez pośredników. Wystarczy kilka kluczowych zmian w designie, SEO i UX."
+relatedSlugs: ["jak-wprowadzic-nowoczesny-system-rezerwacji-na-strone", "dlaczego-turysci-wola-rezerwowac-bezposrednio"]
+ctaTitle: "Twoja strona nie konwertuje?"
+ctaDescription: "Zbuduję dla Ciebie nowoczesną, szybką stronę z systemem rezerwacji, która zamienia odwiedzających w gości."
+ctaLabel: "Zobacz demo systemu"
+ctaHref: "/demo"
 ---
 Jeśli prowadzisz pensjonat w Zakopanem, Szczyrku czy innym urokliwym zakątku Podhala, wiesz jak ważne jest przyciąganie gości bezpośrednio do Twojej strony internetowej. To nie tylko oszczędność na prowizjach, ale także większa kontrola nad relacją z klientem. Zbliża się sezon, a to idealny czas na optymalizację Twojej strony pod kątem rezerwacji bezpośrednich.
 
@@ -22,7 +31,7 @@ Jednym z najprostszych sposobów na zwiększenie rezerwacji bezpośrednich jest 
 - Utrzymuj aktualną dostępność i cenniki, aby uniknąć nieporozumień.
 - Rozważ wprowadzenie promocji lub rabatów przy rezerwacjach bezpośrednich, co zachęci klientów do wyboru tej opcji.
 
-<a href="/kontakt" class="blog-cta">Zbudujemy to dla Ciebie za 250zł/mc. Sprawdź demo. ↗</a>
+<a href="/demo" class="blog-cta">Zobacz jak działa system rezerwacji na żywo. Sprawdź demo. ↗</a>
 
 ## 3. SEO lokalne jako narzędzie przewagi
 

@@ -23,27 +23,30 @@ export function getBlogPosts() {
   }
 
   const polishMonths = {
+    // Genitive (correct form in dates, e.g. "12 sierpnia 2026")
     'stycznia': 0, 'lutego': 1, 'marca': 2, 'kwietnia': 3, 'maja': 4, 'czerwca': 5,
-    'lipca': 6, 'sierpnia': 7, 'września': 8, 'października': 9, 'listopada': 10, 'grudnia': 11
+    'lipca': 6, 'sierpnia': 7, 'września': 8, 'października': 9, 'listopada': 10, 'grudnia': 11,
+    // Nominative fallback (e.g. "12 wrzesień 2026")
+    'styczeń': 0, 'luty': 1, 'marzec': 2, 'kwiecień': 3, 'maj': 4, 'czerwiec': 5,
+    'lipiec': 6, 'sierpień': 7, 'wrzesień': 8, 'październik': 9, 'listopad': 10, 'grudzień': 11
   };
   
-  posts.sort((a, b) => {
-    try {
-      const parseDate = (dateStr) => {
-        if (!dateStr) return 0;
-        const parts = dateStr.split(' ');
-        if (parts.length === 3) {
-          const day = parseInt(parts[0], 10);
-          const month = polishMonths[parts[1].toLowerCase()];
-          const year = parseInt(parts[2], 10);
-          return new Date(year, month, day).getTime();
-        }
-        return 0;
-      };
-      return parseDate(b.updatedAt) - parseDate(a.updatedAt);
-    } catch (e) {
-      return 0;
+  const parsePolishDate = (dateStr) => {
+    if (!dateStr) return 0;
+    const parts = dateStr.trim().split(/\s+/);
+    if (parts.length === 3) {
+      const day = parseInt(parts[0], 10);
+      const month = polishMonths[parts[1].toLowerCase()];
+      const year = parseInt(parts[2], 10);
+      if (!isNaN(day) && month !== undefined && !isNaN(year)) {
+        return new Date(year, month, day).getTime();
+      }
     }
+    return 0;
+  };
+
+  posts.sort((a, b) => {
+    return parsePolishDate(b.updatedAt) - parsePolishDate(a.updatedAt);
   });
 
   return posts;

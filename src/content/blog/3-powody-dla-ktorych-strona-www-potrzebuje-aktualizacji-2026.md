@@ -33,7 +33,7 @@ Zauważyłeś, że coraz więcej gości dokonuje rezerwacji przez OTA takie jak 
 - **Pełna kontrola nad rezerwacjami**: Zarządzasz kalendarzem, cenami i dostępnością w jednym miejscu.
 - **Zwiększone zaufanie gości**: Bezpośrednia rezerwacja daje im pewność i bezpieczeństwo.
 
-<a href="/kontakt" class="blog-cta">Integracja systemu rezerwacji? Sprawdź nasze możliwości! ↗</a>
+<a href="/demo" class="blog-cta">Zobacz jak działa system rezerwacji na żywo. Sprawdź demo. ↗</a>
 
 ## 3. SEO lokalne Zakopane – Twoja tajna broń
 

@@ -32,7 +32,7 @@ Wybierając system rezerwacji na stronę swojego obiektu, zwróć uwagę na kilk
 - **Intuicyjność obsługi**: Upewnij się, że zarówno Ty, jak i Twoi klienci, łatwo zrozumieją, jak korzystać z systemu.
 - **Funkcje dodatkowe**: Możliwość dodania dodatkowych usług, takich jak wynajem sprzętu czy zajęcia, może zwiększyć Twoje przychody.
 
-<a href="/kontakt" class="blog-cta">Zbudujemy to dla Ciebie za 250zł/mc. Sprawdź demo. ↗</a>
+<a href="/demo" class="blog-cta">Zobacz jak działa system rezerwacji na żywo. Sprawdź demo. ↗</a>
 
 ## 3. Integracja z Hotres i Roomadmin – czy to się opłaca?
 

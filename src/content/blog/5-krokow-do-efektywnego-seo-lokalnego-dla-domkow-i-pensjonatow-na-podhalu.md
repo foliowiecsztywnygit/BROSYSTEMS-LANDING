@@ -48,7 +48,7 @@ Sezon turystyczny na Podhalu zmienia się wraz z porami roku, dlatego warto na b
 
 Zachęcaj swoich gości do zostawiania opinii w Google i na Facebooku. Dobre opinie nie tylko przyciągają nowych klientów, ale także wspierają SEO lokalne. Pomyśl o wprowadzeniu systemu nagród za opinie, np. mały upominek na kolejne rezerwacje.
 
-<a href="/kontakt" class="blog-cta">Zbudujemy to dla Ciebie za 250zł/mc. Sprawdź demo. ↗</a>
+<a href="/demo" class="blog-cta">Zobacz jak działa system rezerwacji na żywo. Sprawdź demo. ↗</a>
 
 Dzięki tym pięciu krokom, Twoje szanse na lepszą widoczność w wynikach wyszukiwania znacząco wzrosną. Pamiętaj, że SEO lokalne to proces, który wymaga czasu, ale przynosi długofalowe korzyści.
 

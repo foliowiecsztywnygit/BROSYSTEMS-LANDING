@@ -26,6 +26,8 @@ import BlogIndex from './pages/BlogIndex';
 import BlogPostPage from './pages/BlogPostPage';
 import OfertaPage from './pages/OfertaPage';
 import ThankYou from './pages/ThankYou';
+import DemoPage from './pages/DemoPage';
+import CampaignPage from './pages/CampaignPage';
 import ScrollToTop from './components/ScrollToTop';
 
 const GooeyFilter = () => (
@@ -83,6 +85,8 @@ function App() {
         <Route path="/polityka-prywatnosci" element={<Privacy />} />
         <Route path="/regulamin" element={<Terms />} />
         <Route path="/sukces" element={<ThankYou />} />
+        <Route path="/demo" element={<DemoPage />} />
+        <Route path="/kampania" element={<CampaignPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

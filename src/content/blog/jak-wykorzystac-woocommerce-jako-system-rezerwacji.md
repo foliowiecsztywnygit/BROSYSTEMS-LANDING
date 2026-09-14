@@ -40,7 +40,7 @@ Z mojego doświadczenia wynika, że kluczowe jest skupienie się na optymalizacj
 - **SEO lokalne Zakopane:** Zainwestuj w pozycjonowanie, aby twoja strona była widoczna dla turystów planujących pobyt w regionie.
 - **Promocje i pakiety:** Dodaj specjalne oferty skierowane do bezpośrednich klientów.
 
-<a href="/kontakt" class="blog-cta">Chcesz skorzystać z WooCommerce? Skontaktuj się z nami, aby wdrożyć to za 250zł/mc. Sprawdź demo. ↗</a>
+<a href="/demo" class="blog-cta">Zobacz jak działa system rezerwacji na żywo. Sprawdź demo. ↗</a>
 
 ## 4. Zalety WooCommerce w 2026 roku
 

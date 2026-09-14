@@ -43,7 +43,7 @@ Z mojego doświadczenia wynika, że współpraca z lokalnymi przewodnikami i blo
 
 Lokalne SEO to nieustanna praca. Monitorowanie wyników i regularne dostosowywanie strategii to klucz do sukcesu. Korzystaj z narzędzi analitycznych, aby śledzić ruch na stronie i dostosowywać swoje działania. Pamiętaj, że każda zmiana powinna być oparta na danych.
 
-<a href="/kontakt" class="blog-cta">Zoptymalizuj swoją stronę pod kątem lokalnego SEO. Skontaktuj się z nami! ↗</a>
+<a href="/demo" class="blog-cta">Zobacz jak działa system rezerwacji na żywo. Sprawdź demo. ↗</a>
 
 Zastosowanie tych pięciu strategii pomoże zwiększyć widoczność Twojego obiektu noclegowego i przyciągnąć więcej gości. Nie czekaj, rozpocznij optymalizację już teraz i pozwól, aby Twoje strony dla pensjonatów stały się bardziej widoczne.
 
