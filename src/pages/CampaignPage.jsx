@@ -96,7 +96,7 @@ const CampaignPage = () => {
           content="Odzyskaj rezerwacje bezpośrednie i przestań płacić prowizje. System rezerwacji na Twojej stronie – 0% prowizji, automatyczne zadatki, synchronizacja z Booking i Airbnb."
         />
         <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://brosystems.pl/kampania" />
+        <link rel="canonical" href="https://brosystems.pl/witaj" />
       </Helmet>
       <TopBar />
       <Navbar />

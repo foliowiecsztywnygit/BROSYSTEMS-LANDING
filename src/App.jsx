@@ -86,7 +86,7 @@ function App() {
         <Route path="/regulamin" element={<Terms />} />
         <Route path="/sukces" element={<ThankYou />} />
         <Route path="/demo" element={<DemoPage />} />
-        <Route path="/kampania" element={<CampaignPage />} />
+        <Route path="/witaj" element={<CampaignPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
