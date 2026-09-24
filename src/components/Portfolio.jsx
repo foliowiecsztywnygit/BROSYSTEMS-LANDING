@@ -17,7 +17,7 @@ const projects = [
       'nowoczesny i responsywny design dopasowany do smartfonów'
     ],
     image: '/willabielik.png',
-    link: '#',
+    link: 'https://willa-bielik.pl',
     scale: 1.0
   },
   {
@@ -32,7 +32,7 @@ const projects = [
       'bardziej premium odbiór całej oferty dopasowany do charakteru miejsca'
     ],
     image: '/zamek.png',
-    link: '#',
+    link: 'https://domwbieszczadachnadrzeka.pl',
     scale: 1.0
   },
   {
