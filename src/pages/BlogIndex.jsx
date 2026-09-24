@@ -44,9 +44,9 @@ const BlogIndex = () => {
             {blogPosts.map((post) => (
               <article key={post.slug} className={styles.postCard}>
                 <div className={styles.postMeta}>
-                  <span>{post.category}</span>
-                  <span>{post.readTime}</span>
-                  <span>{post.updatedAt}</span>
+                  {post.category && <span>{post.category}</span>}
+                  {post.readTime && <span>{post.readTime}</span>}
+                  {post.updatedAt && <span>{post.updatedAt.toUpperCase()}</span>}
                 </div>
                 <h2>{post.title}</h2>
                 <p>{post.excerpt}</p>
