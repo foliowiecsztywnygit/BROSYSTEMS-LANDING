@@ -90,6 +90,9 @@
   line-height: 1.05;
   letter-spacing: -0.035em;
   text-wrap: balance;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
   color: var(--text);
 }
 
@@ -263,7 +266,7 @@
 
   .scroller {
     flex-direction: row;
-    animation: scrollHorizontal 35s linear infinite;
+    animation: scrollHorizontal 15s linear infinite;
   }
   
   @keyframes scrollHorizontal {

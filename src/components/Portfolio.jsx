@@ -6,6 +6,36 @@ import styles from './Portfolio.module.css';
 
 const projects = [
   {
+    id: 8,
+    title: 'Willa Bielik',
+    label: 'PRZEJRZYSTA OFERTA I BEZPOŚREDNIE REZERWACJE',
+    description: 'Celem było stworzenie czytelnej przestrzeni, w której goście mogą wygodnie zapoznać się z układem pokoi i dokonać rezerwacji, z pominięciem zewnętrznych portali i wysokich prowizji.',
+    categories: ['Willa', 'Rezerwacje', 'UX/UI'],
+    highlights: [
+      'poukładana struktura pokoi z naciskiem na zdjęcia i udogodnienia',
+      'prostsza ścieżka rezerwacji z przejrzystym kalendarzem online',
+      'nowoczesny i responsywny design dopasowany do smartfonów'
+    ],
+    image: '/willabielik.png',
+    link: '#',
+    scale: 1.0
+  },
+  {
+    id: 9,
+    title: 'Dom w Bieszczadach nad Rzeką',
+    label: 'KLIMATYCZNY OBIEKT Z WYRAZISTYM CHARAKTEREM',
+    description: 'Celem było oddanie unikalnego, spokojnego klimatu miejsca przy jednoczesnym dostarczeniu zautomatyzowanego narzędzia, które płynnie prowadzi klienta od zdjęć do decyzji o pobycie.',
+    categories: ['Bieszczady', 'Dom nad rzeką', 'Klimat'],
+    highlights: [
+      'wyraźna ekspozycja największych atutów obiektu i bliskości natury',
+      'intuicyjna nawigacja skracająca proces bezpośredniej rezerwacji',
+      'bardziej premium odbiór całej oferty dopasowany do charakteru miejsca'
+    ],
+    image: '/zamek.png',
+    link: '#',
+    scale: 1.0
+  },
+  {
     id: 7,
     title: 'DZIANISZ N°54',
     label: 'ELEGANCKA WIZYTÓWKA KOMPLEKSU DOMKÓW',

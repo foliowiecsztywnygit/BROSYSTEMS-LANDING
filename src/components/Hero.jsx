@@ -138,7 +138,7 @@ const Hero = () => {
           </div>
 
           <h1 className={`${styles.title} fade-in reveal delay-100`}>
-            Koniec pierdół i umów na lata.
+            Koniec głupot.
           </h1>
           <h2 className={`${styles.subtitle} fade-in reveal delay-200`}>
             Zwiększ liczbę bezpośrednich rezerwacji i przestań płacić gigantyczne prowizje portalom. Otrzymujesz nowoczesną stronę, system rezerwacji i channel manager – wszystko w jednym miejscu.
