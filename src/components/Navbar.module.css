@@ -19,6 +19,14 @@
   top: 0; /* Navbar dokleja się do samej góry po scrollu */
 }
 
+/* When mobile menu is open, always show navbar and force dark background */
+.navbar.menuOpen {
+  transform: translateY(0) !important;
+  background: rgba(10, 10, 10, 0.97);
+  backdrop-filter: blur(16px);
+  top: 0;
+}
+
 .navContainer {
   display: flex;
   justify-content: space-between;
@@ -42,6 +50,57 @@
   /* usunięto filter: invert(1), bo w dark mode chcemy białe logo natywnie */
 }
 
+/* ============================
+   Hamburger button (mobile only)
+   ============================ */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 110;
+  transition: border-color 0.2s ease;
+}
+
+.hamburger:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.hamburgerLine {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--text);
+  border-radius: 2px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+  transform-origin: center;
+}
+
+/* Hamburger → X animation */
+.hamburgerActive .hamburgerLine:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburgerActive .hamburgerLine:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.hamburgerActive .hamburgerLine:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ============================
+   Desktop nav links
+   ============================ */
 .navLinks {
   display: none;
   align-items: center;
@@ -84,7 +143,17 @@
   box-shadow: 0 0 20px var(--purple-glow);
 }
 
-@media (min-width: 768px) {
+/* ============================
+   Overlay backdrop
+   ============================ */
+.overlay {
+  display: none;
+}
+
+/* ============================
+   Desktop — show nav links, hide hamburger
+   ============================ */
+@media (min-width: 769px) {
   .navLinks {
     display: flex;
   }
@@ -93,6 +162,9 @@
   }
 }
 
+/* ============================
+   Mobile — hamburger + dropdown
+   ============================ */
 @media (max-width: 768px) {
   .navbar {
     padding: 0.5rem 0;
@@ -103,11 +175,102 @@
     pointer-events: none;
   }
 
+  /* When menu is open, always show logo */
+  .navbar.menuOpen .logo {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
   .logoImage {
     height: 44px;
   }
+
+  /* Show hamburger on mobile */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Mobile nav links — dropdown panel */
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 80px 24px 32px;
+    background: rgba(8, 8, 12, 0.98);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+    z-index: 105;
+
+    /* Hidden by default */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                visibility 0.3s;
+  }
+
+  .navLinksOpen {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .navLinks a {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 14px 4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    color: var(--text);
+    transition: color 0.2s ease, padding-left 0.2s ease;
+  }
+
+  .navLinks a:hover,
+  .navLinks a:active {
+    color: var(--accent, #a78bfa);
+    padding-left: 12px;
+  }
+
+  /* Remove underline animation on mobile */
+  .navLinks a:not(.navBtn)::after {
+    display: none;
+  }
+
+  .navBtnWrapper {
+    margin-top: 16px;
+    padding-top: 8px;
+  }
+
+  /* Overlay backdrop */
+  .overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s;
+  }
+
+  .overlayVisible {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
+/* ============================
+   Mobile contact bubble (unchanged)
+   ============================ */
 .mobileContactBubble {
   display: none;
 }

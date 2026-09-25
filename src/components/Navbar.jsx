@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import GooeyButton from './ui/GooeyButton';
 import { Phone } from 'lucide-react';
@@ -7,6 +7,8 @@ import styles from './Navbar.module.css';
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const navRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,31 +22,75 @@ const Navbar = () => {
       } else {
         setIsHidden(false);
       }
+
+      // Close mobile menu on scroll
+      if (menuOpen) setMenuOpen(false);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [menuOpen]);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    if (!menuOpen) return;
+    const handleClickOutside = (e) => {
+      if (navRef.current && !navRef.current.contains(e.target)) {
+        setMenuOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [menuOpen]);
+
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [menuOpen]);
+
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <>
-      <header data-navbar className={`${styles.navbar} ${scrolled ? styles.scrolled : styles.top} ${isHidden ? styles.hidden : ''}`}>
+      <header data-navbar ref={navRef} className={`${styles.navbar} ${scrolled ? styles.scrolled : styles.top} ${isHidden ? styles.hidden : ''} ${menuOpen ? styles.menuOpen : ''}`}>
         <div className={`container ${styles.navContainer}`}>
           <a href="#" className={styles.logo}>
             <img src="/logo.png" alt="BroSystems Logo" className={styles.logoImage} />
           </a>
-          <nav className={styles.navLinks}>
-            <a href="/#dla-kogo">Dla kogo</a>
-            <a href="/#uslugi">Usługi</a>
-            <Link to="/oferta">Oferta</Link>
-            <Link to="/blog">Blog</Link>
-            <a href="/#portfolio">Realizacje</a>
+
+          {/* Hamburger button — mobile only */}
+          <button
+            className={`${styles.hamburger} ${menuOpen ? styles.hamburgerActive : ''}`}
+            onClick={() => setMenuOpen((prev) => !prev)}
+            aria-label={menuOpen ? 'Zamknij menu' : 'Otwórz menu'}
+            aria-expanded={menuOpen}
+          >
+            <span className={styles.hamburgerLine} />
+            <span className={styles.hamburgerLine} />
+            <span className={styles.hamburgerLine} />
+          </button>
+
+          {/* Desktop nav links (unchanged) + Mobile dropdown */}
+          <nav className={`${styles.navLinks} ${menuOpen ? styles.navLinksOpen : ''}`}>
+            <a href="/#dla-kogo" onClick={closeMenu}>Dla kogo</a>
+            <a href="/#uslugi" onClick={closeMenu}>Usługi</a>
+            <Link to="/oferta" onClick={closeMenu}>Oferta</Link>
+            <Link to="/blog" onClick={closeMenu}>Blog</Link>
+            <a href="/#portfolio" onClick={closeMenu}>Realizacje</a>
             <div className={styles.navBtnWrapper}>
-              <GooeyButton href="/#kontakt" variant="outline">Kontakt</GooeyButton>
+              <GooeyButton href="/#kontakt" variant="outline" onClick={closeMenu}>Kontakt</GooeyButton>
             </div>
           </nav>
         </div>
       </header>
+
+      {/* Overlay backdrop when mobile menu is open */}
+      <div className={`${styles.overlay} ${menuOpen ? styles.overlayVisible : ''}`} onClick={closeMenu} />
 
       {/* Floating contact bubble for mobile */}
       <div className={`${styles.mobileContactBubble} ${scrolled ? styles.visible : ''}`}>
@@ -62,3 +108,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
