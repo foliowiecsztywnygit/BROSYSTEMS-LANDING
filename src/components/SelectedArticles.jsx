@@ -21,15 +21,15 @@ const SelectedArticles = () => {
         <div className={styles.scrollWrapper}>
           <div className={styles.articlesGrid}>
             {selectedPosts.map((post) => (
-              <article key={post.slug} className={styles.postCard}>
+              <Link to={post.path} key={post.slug} className={styles.postCard}>
                 <div className={styles.postMeta}>
                   <span>{post.category}</span>
                   <span>{post.readTime}</span>
                 </div>
                 <h3 className={styles.postTitle}>{post.title}</h3>
                 <p className={styles.postExcerpt}>{post.excerpt}</p>
-                <Link to={post.path} className={styles.linkItem}>Czytaj artykuł →</Link>
-              </article>
+                <span className={styles.linkItem}>Czytaj artykuł →</span>
+              </Link>
             ))}
           </div>
         </div>

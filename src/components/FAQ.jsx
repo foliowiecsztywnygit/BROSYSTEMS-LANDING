@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: 'Czy wdrażasz Hotres, Roomadmin albo inne systemy rezerwacji?',
-    answer: 'Tak, pracuję z wdrożeniami booking engine i dopasowuję stronę do sposobu, w jaki użytkownik ma przechodzić do sprawdzenia terminu i rezerwacji. Chodzi nie tylko o samą integrację, ale o to, żeby była dobrze osadzona w całej ścieżce zakupu.'
+    answer: 'Nie wdrażamy gotowców. Tworzymy dla Ciebie dedykowany, autorski Channel Manager na niezawodnym API Beds24. Dzięki temu nie płacisz prowizji od rezerwacji, masz synchronizację na żywo z Booking/Airbnb, a system i strona są w 100% Twoją własnością.'
   },
   {
     question: 'Czy taka strona pomoże obiektowi być lepiej widocznym na Zakopane, Szczyrk i Podhale?',

@@ -1,6 +1,6 @@
 .cta {
-  background-color: var(--accent);
-  color: var(--bg);
+  background-color: #09090B; /* bg-zinc-950 */
+  color: #FAFAFA; /* text-zinc-50 */
   text-align: center;
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -29,6 +29,7 @@
 .title {
   margin-bottom: 2rem;
   font-weight: 600;
+  color: #FAFAFA;
 }
 
 .title strong {
@@ -39,11 +40,11 @@
 .description {
   max-width: 600px;
   margin-bottom: 4rem;
-  color: rgba(0, 0, 0, 0.7);
+  color: #A1A1AA;
 }
 
 .description strong {
-  color: var(--bg);
+  color: #FAFAFA;
   font-weight: 700;
 }
 
@@ -51,8 +52,8 @@
   width: 100%;
   max-width: 900px;
   text-align: left;
-  background: rgba(0, 0, 0, 0.04);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: #18181B; /* bg-zinc-900 */
+  border: 1px solid #27272A; /* border-zinc-800 */
   border-radius: 1rem;
   padding: 2rem;
 }
@@ -61,6 +62,7 @@
   font-size: 1.35rem;
   font-weight: 800;
   margin: 0 0 1rem;
+  color: #FAFAFA;
 }
 
 .auditList {
@@ -71,20 +73,19 @@
 
 .auditList li {
   position: relative;
-  padding-left: 1.25rem;
-  color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: #A1A1AA;
   line-height: 1.6;
 }
 
-.auditList li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.7rem;
-  width: 7px;
-  height: 7px;
-  border-radius: 999px;
-  background: var(--bg);
+.checkIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--purple-dark, #9333ea);
 }
 
 .directContact {
@@ -110,66 +111,29 @@
   opacity: 0.7;
 }
 
-.contactLink {
-  font-family: var(--font-heading);
-  font-size: clamp(1.25rem, 3vw, 2rem);
-  font-weight: 800;
-  color: var(--bg);
-  text-decoration: none;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-}
-
-.contactLink::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--bg);
-  transition: width 0.3s ease;
-}
-
-.contactLink:hover::after {
-  width: 100%;
-}
-
-.whatsappLink {
+.contactButton {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  font-size: 1.5rem;
+  background-color: var(--purple-dark, #9333ea);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  white-space: nowrap;
 }
 
-.whatsappLink svg {
-  transition: transform 0.3s ease;
+.contactButton:hover {
+  background-color: var(--purple-light, #a855f7);
+  transform: translateY(-2px);
 }
 
-.whatsappLink:hover svg {
-  transform: scale(1.1) rotate(5deg);
-}
-
-.pointerEmoji {
-  position: absolute;
-  left: 50%;
-  bottom: -35px; /* Umieszczone tuż pod linkiem */
-  transform: translateX(-50%);
-  font-size: 1.75rem;
-  animation: clickAnimation 1.5s infinite ease-in-out;
-  pointer-events: none; /* Nie blokuje kliknięć w sam link */
-  z-index: 10;
-  display: inline-block;
-}
-
-@keyframes clickAnimation {
-  0%, 100% {
-    transform: translateX(-50%) translateY(8px) scale(1);
-  }
-  50% {
-    transform: translateX(-50%) translateY(-2px) scale(0.9);
-  }
+.contactButton svg {
+  width: 20px;
+  height: 20px;
 }
 
 @media (min-width: 768px) {

@@ -6,23 +6,13 @@ import styles from './Navbar.module.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [isHidden, setIsHidden] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const navRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
       setScrolled(currentScrollY > 20);
-      
-      // Hide navbar when scrolled down at all, only show at the very top
-      if (currentScrollY > 100) {
-        setIsHidden(true);
-      } else {
-        setIsHidden(false);
-      }
-
       // Close mobile menu on scroll
       if (menuOpen) setMenuOpen(false);
     };
@@ -57,12 +47,11 @@ const Navbar = () => {
 
   return (
     <>
-      <header data-navbar ref={navRef} className={`${styles.navbar} ${scrolled ? styles.scrolled : styles.top} ${isHidden ? styles.hidden : ''} ${menuOpen ? styles.menuOpen : ''}`}>
+      <header data-navbar ref={navRef} className={`${styles.navbar} ${scrolled ? styles.scrolled : styles.top} ${menuOpen ? styles.menuOpen : ''}`}>
         <div className={`container ${styles.navContainer}`}>
           <a href="#" className={styles.logo}>
             <img src="/logo.png" alt="BroSystems Logo" className={styles.logoImage} />
           </a>
-
           {/* Hamburger button — mobile only */}
           <button
             className={`${styles.hamburger} ${menuOpen ? styles.hamburgerActive : ''}`}
@@ -77,8 +66,6 @@ const Navbar = () => {
 
           {/* Desktop nav links (unchanged) + Mobile dropdown */}
           <nav className={`${styles.navLinks} ${menuOpen ? styles.navLinksOpen : ''}`}>
-            <a href="/#dla-kogo" onClick={closeMenu}>Dla kogo</a>
-            <a href="/#uslugi" onClick={closeMenu}>Usługi</a>
             <Link to="/oferta" onClick={closeMenu}>Oferta</Link>
             <Link to="/blog" onClick={closeMenu}>Blog</Link>
             <a href="/#portfolio" onClick={closeMenu}>Realizacje</a>

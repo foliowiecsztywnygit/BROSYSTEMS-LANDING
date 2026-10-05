@@ -1,7 +1,7 @@
 .faqSection {
-  background-color: var(--bg);
+  background-color: #09090B; /* bg-zinc-950 */
   padding: 8rem 0;
-  border-top: 1px solid var(--gray-mid);
+  border-top: 1px solid #27272A; /* border-zinc-800 */
 }
 
 .header {
@@ -14,11 +14,12 @@
 
 .title {
   margin-top: 1rem;
+  color: #FAFAFA;
 }
 
 .lead {
   margin-top: 1.25rem;
-  color: var(--gray-dark);
+  color: #A1A1AA; /* text-zinc-400 */
   font-size: 1.05rem;
   line-height: 1.7;
 }
@@ -32,8 +33,8 @@
 }
 
 .accordionItem {
-  background: transparent;
-  border: 1px solid var(--gray-mid);
+  background: #18181B; /* bg-zinc-900 */
+  border: 1px solid #27272A; /* border-zinc-800 */
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -57,7 +58,7 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  color: var(--text);
+  color: #FAFAFA; /* text-zinc-50 */
   text-align: left;
   transition: color 0.3s ease;
 }
@@ -73,6 +74,7 @@
   margin: 0;
   padding-right: 1.5rem;
   line-height: 1.4;
+  color: #FAFAFA;
   transition: color 0.3s ease;
 }
 
@@ -86,8 +88,8 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: var(--bg);
-  border: 1px solid var(--gray-mid);
+  background: transparent;
+  border: 1px solid #27272A;
   flex-shrink: 0;
   transition: all 0.3s ease;
 }
@@ -105,7 +107,7 @@
 
 .answer {
   padding: 0 1.5rem 1.5rem;
-  color: var(--gray-dark);
+  color: #A1A1AA; /* text-zinc-400 */
   line-height: 1.6;
 }
 

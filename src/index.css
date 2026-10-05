@@ -11,11 +11,11 @@
 
 :root {
   /* Colors - DARK MODE */
-  --bg: #000000; /* Całkowicie czarne tło */
-  --text: #ffffff; /* Biały tekst */
+  --bg: #09090B; /* Głęboki grafit */
+  --text: #FAFAFA; /* Złamana biel */
   --gray-light: #111111; /* Ciemniejszy panel/tło drugorzędne */
-  --gray-mid: #333333; /* Obramowania */
-  --gray-dark: #aaaaaa; /* Tekst poboczny / wyciszony - rozjaśniony z 888888 */
+  --gray-mid: #27272A; /* Obramowania */
+  --gray-dark: #A1A1AA; /* Tekst poboczny / wyciszony - rozjaśniony z 888888 */
   --accent: oklch(0.97 0 0);
   --purple-dark: #a020f0; /* Rozjaśniony fiolet (jako akcent do ciemnego tła) */
   --purple-glow: rgba(160, 32, 240, 0.2);

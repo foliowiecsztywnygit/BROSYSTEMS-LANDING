@@ -1,7 +1,7 @@
 .section {
   padding: var(--section-padding) 0;
-  background-color: var(--bg);
-  border-top: 1px solid var(--gray-mid);
+  background-color: #09090B; /* bg-zinc-950 */
+  border-top: 1px solid #27272A; /* border-zinc-800 */
 }
 
 .container {
@@ -16,7 +16,7 @@
 
 .lead {
   margin-top: 1rem;
-  color: var(--gray-dark);
+  color: #A1A1AA; /* text-zinc-400 */
   font-size: 1.05rem;
   line-height: 1.6;
 }
@@ -28,19 +28,22 @@
 }
 
 .postCard {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--gray-mid);
+  background: #18181B; /* bg-zinc-900 */
+  border: 1px solid #27272A; /* border-zinc-800 */
   border-radius: 1rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  transition: var(--transition);
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .postCard:hover {
-  border-color: var(--purple-dark);
-  background: rgba(160, 32, 240, 0.05);
+  border-color: #3f3f46; /* border-zinc-700 */
+  background: rgba(160, 32, 240, 0.05); /* keep purple tint */
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 .postMeta {
@@ -51,7 +54,7 @@
   font-family: var(--font-heading);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--gray-dark);
+  color: #A1A1AA;
 }
 
 .postMeta span:not(:last-child)::after {
@@ -64,11 +67,11 @@
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.3;
-  color: var(--text);
+  color: #FAFAFA;
 }
 
 .postExcerpt {
-  color: var(--gray-dark);
+  color: #A1A1AA;
   font-size: 0.95rem;
   line-height: 1.6;
   flex-grow: 1;
