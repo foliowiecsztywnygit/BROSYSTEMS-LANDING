@@ -1,15 +1,22 @@
 .hero {
-  min-height: calc(100svh - var(--hero-offset, 96px));
-  height: calc(100svh - var(--hero-offset, 96px));
+  min-height: calc(100svh - var(--topbar-height, 36px));
+  height: auto;
   box-sizing: border-box;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
   position: relative;
-  padding-top: clamp(1.5rem, 3vh, 2.75rem);
-  padding-bottom: clamp(1rem, 2.5vh, 1.8rem);
+  padding-top: calc(var(--nav-height, 72px) + clamp(2.75rem, 5.5vh, 4.25rem));
+  padding-bottom: clamp(2rem, 4vh, 3rem);
   background-attachment: fixed;
   border-bottom: 1px solid var(--border);
   overflow: hidden;
+}
+
+@media (min-width: 1025px) and (min-height: 850px) {
+  .hero {
+    height: calc(100svh - var(--topbar-height, 36px));
+  }
 }
 
 .wavesWrapper {
@@ -28,10 +35,12 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 3rem;
-  height: 100%;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: auto;
   position: relative;
   z-index: 10;
-  padding-top: clamp(2rem, 5vh, 4rem);
+  padding-top: 0;
 }
 
 .heroContentLeft {
@@ -55,7 +64,7 @@
 /* social proof */
 .socialProof {
   display: flex;
-  gap: 1.5rem;
+  gap: 0.75rem 1rem;
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
 }
@@ -91,8 +100,9 @@
   letter-spacing: -0.02em;
   text-wrap: balance;
   overflow-wrap: break-word;
-  word-break: break-word;
-  hyphens: auto;
+  word-break: normal;
+  hyphens: manual;
+  -webkit-hyphens: manual;
   color: var(--text);
 }
 
@@ -289,8 +299,8 @@
   .hero {
     background-attachment: scroll;
     height: auto;
-    min-height: calc(100svh - var(--hero-offset, 96px));
-    padding-top: 5rem;
+    min-height: calc(100svh - var(--topbar-height, 36px));
+    padding-top: calc(var(--nav-height, 72px) + 2rem);
     padding-bottom: 3rem;
   }
 

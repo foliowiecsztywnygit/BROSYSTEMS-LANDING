@@ -206,8 +206,9 @@
   letter-spacing: -0.02em;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  hyphens: auto;
-  -webkit-hyphens: auto;
+  word-break: normal;
+  hyphens: manual;
+  -webkit-hyphens: manual;
 }
 
 .highlights {

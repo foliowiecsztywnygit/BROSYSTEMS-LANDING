@@ -47,7 +47,11 @@ const RatingBadge = ({ color, children }) => (
 
 const Hero = () => {
   const [showWaves, setShowWaves] = useState(false);
-  const [heroOffset, setHeroOffset] = useState(96);
+  const [layoutHeights, setLayoutHeights] = useState({
+    totalOffset: 108,
+    navHeight: 72,
+    topBarHeight: 36
+  });
 
   useEffect(() => {
     const elements = document.querySelectorAll(`.${styles.heroContentLeft} .fade-in, .${styles.heroContentRight}.fade-in`);
@@ -69,10 +73,14 @@ const Hero = () => {
     const updateHeroLayout = () => {
       const topBar = document.querySelector('[data-topbar]');
       const navbar = document.querySelector('[data-navbar]');
-      const topBarHeight = topBar?.getBoundingClientRect().height ?? 0;
-      const navbarHeight = navbar?.getBoundingClientRect().height ?? 0;
-      const totalOffset = Math.round(topBarHeight + navbarHeight);
-      setHeroOffset(totalOffset || 96);
+      const topBarHeight = topBar ? Math.round(topBar.getBoundingClientRect().height) : 36;
+      const navbarHeight = navbar ? Math.round(navbar.getBoundingClientRect().height) : 72;
+      const totalOffset = topBarHeight + navbarHeight;
+      setLayoutHeights({
+        totalOffset: totalOffset || 108,
+        navHeight: navbarHeight || 72,
+        topBarHeight: topBarHeight || 36
+      });
     };
 
     updateWavesVisibility();
@@ -99,7 +107,14 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className={`${styles.hero} bg-grid`} style={{ '--hero-offset': `${heroOffset}px` }}>
+    <section 
+      className={`${styles.hero} bg-grid`} 
+      style={{ 
+        '--hero-offset': `${layoutHeights.totalOffset}px`,
+        '--nav-height': `${layoutHeights.navHeight}px`,
+        '--topbar-height': `${layoutHeights.topBarHeight}px`
+      }}
+    >
       {showWaves && (
         <div className={styles.wavesWrapper}>
           <Waves 

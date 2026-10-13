@@ -94,8 +94,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  hyphens: auto;
-  -webkit-hyphens: auto;
+  word-break: normal;
+  hyphens: manual;
+  -webkit-hyphens: manual;
 }
 
 a {
@@ -139,9 +140,9 @@ ul {
 }
 .heading-xl, .heading-lg, .heading-md {
   overflow-wrap: break-word;
-  word-break: break-word;
-  hyphens: auto;
-  -webkit-hyphens: auto;
+  word-break: normal;
+  hyphens: manual;
+  -webkit-hyphens: manual;
 }
 
 .heading-xl {
