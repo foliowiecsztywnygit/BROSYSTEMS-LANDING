@@ -1,6 +1,6 @@
 ---
 title: "Jak Andrzej z Zakopanego wykorzystał newsletter pensjonatu do zwiększenia rezerwacji"
-metaTitle: "Newsletter pensjonatu – więcej powracających gości | WEBBROSKIDEV - Krzysztof Żebrowski"
+metaTitle: "Newsletter pensjonatu – więcej powracających gości | BROSYSTEMS - Krzysztof Żebrowski"
 metaDescription: "Dowiedz się, jak baza mailingowa zwiększyła zyski pensjonatu Andrzeja z Zakopanego. Sprawdź konkretne liczby i sprawdzone techniki email marketingu."
 slug: "newsletter-pensjonat-email-marketing-zakopane-casestudy"
 category: "Marketing obiektów"
@@ -152,6 +152,6 @@ Historia Andrzeja świadczy o tym, że newsletter pensjonat i email marketing no
 
 Nie masz jeszcze bazy mailingowej? Za dwa miesiące zaczyna się sezon zimowy. Warto, żeby Twoja strona pomagała ją budować już dziś.
 
-**[Tekst zachęty do działania →](/oferta)**
+**[Zbuduj bazę powracających gości i uniezależnij się od prowizji OTA →](/oferta)**
 
 *Autor: Krzysztof Żebrowski*

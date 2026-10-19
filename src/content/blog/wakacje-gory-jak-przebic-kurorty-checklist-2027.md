@@ -119,6 +119,6 @@ Widziałem obiekty, które po aktualizacji zdjęć notowały wzrost zapytań o 2
 
 Z moich obserwacji wynika, że przeciętny pensjonat z Podhala odhacza 4-5 z tych 9 punktów. Najczęściej brakuje: dobrych zdjęć pod rodziny, solidnych opinii, osobnej oferty rodzinnej i sprawnego systemu zaliczek. Chcesz mieć pełne pokoje latem 2027, a nie patrzeć jak goście decydują się na Bałtyk? Sprawdź, ile już masz odhaczone — i dopracuj resztę na spokojnie, zanim przyjdzie pierwszy śnieg.
 
-**[Tekst zachęty do działania →](/oferta)**
+**[Wyróżnij swój pensjonat w górach i skutecznie rywalizuj z kurortami →](/oferta)**
 
 *Autor: Krzysztof Żebrowski*

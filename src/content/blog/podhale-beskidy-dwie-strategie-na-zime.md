@@ -1,6 +1,6 @@
 ---
 title: "Rozmowa z Alicją: Podhale i Beskidy to dwa różne światy – tak planuję sezon"
-metaTitle: "Podhale vs Beskidy – strategie na zimowy sezon | WEBBROSKIDEV - Krzysztof Żebrowski"
+metaTitle: "Podhale vs Beskidy – strategie na zimowy sezon | BROSYSTEMS - Krzysztof Żebrowski"
 metaDescription: "Podhale i Beskidy – różne rynki, inne podejście do sezonu. Ekspertka noclegów zdradza liczby, dynamikę i praktyczne strategie na zimę 2026."
 slug: "podhale-beskidy-dwie-strategie-na-zime"
 category: "Sezon i strategia"

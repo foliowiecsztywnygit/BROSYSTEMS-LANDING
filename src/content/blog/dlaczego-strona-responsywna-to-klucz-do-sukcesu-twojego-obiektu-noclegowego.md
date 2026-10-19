@@ -7,7 +7,7 @@ category: "Technika, która sprzedaje"
 readTime: "6 min"
 updatedAt: "8 września 2026"
 excerpt: "W dobie urządzeń mobilnych responsywność strony to nie luksus, a konieczność. Dowiedz się, jak to wpływa na rezerwacje i satysfakcję gości."
-relatedSlugs: ["jak-wprowadzic-nowoczesny-system-rezerwacji-na-strone-twojego-obiektu", "3-powody-dla-ktorych-twoja-strona-www-potrzebuje-aktualizacji-w-2026-roku"]
+relatedSlugs: ["jak-wprowadzic-nowoczesny-system-rezerwacji-na-strone", "3-powody-dla-ktorych-strona-www-potrzebuje-aktualizacji-2026"]
 ctaTitle: "Zaktualizuj swoją stronę"
 ctaDescription: "Responsywna strona to więcej rezerwacji i zadowolonych gości. Sprawdź, jak możemy pomóc!"
 ctaLabel: "Porozmawiajmy"

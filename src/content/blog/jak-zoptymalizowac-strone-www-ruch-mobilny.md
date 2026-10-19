@@ -7,7 +7,7 @@ category: "Technika, która sprzedaje"
 readTime: "6 min"
 updatedAt: "10 września 2026"
 excerpt: "Odkryj, jak optymalizacja strony WWW pod kątem urządzeń mobilnych może zwiększyć liczbę rezerwacji w Twoim obiekcie noclegowym. Poznaj kluczowe kroki, które warto wdrożyć już dziś."
-relatedSlugs: ["dlaczego-strona-responsywna-to-klucz-do-sukcesu", "jak-wprowadzic-nowoczesny-system-rezerwacji"]
+relatedSlugs: ["dlaczego-strona-responsywna-to-klucz-do-sukcesu-twojego-obiektu-noclegowego", "jak-wprowadzic-nowoczesny-system-rezerwacji-na-strone"]
 ctaTitle: "Chcesz zwiększyć rezerwacje?"
 ctaDescription: "Skorzystaj z naszej wiedzy i zmodernizuj swoją stronę WWW, aby przyciągnąć więcej gości."
 ctaLabel: "Porozmawiajmy"

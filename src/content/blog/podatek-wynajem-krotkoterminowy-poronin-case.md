@@ -1,6 +1,6 @@
 ---
 title: "Jak Jan z Poronina poradził sobie z podatkami od najmu krótkoterminowego"
-metaTitle: "Podatki najmu krótkoterminowego: case Jan Poronin | WEBBROSKIDEV - Krzysztof Żebrowski"
+metaTitle: "Podatki najmu krótkoterminowego: case Jan Poronin | BROSYSTEMS - Krzysztof Żebrowski"
 metaDescription: "Poznaj historię Jana z Poronina: ryczałt, VAT, kasa fiskalna. Konkretne liczby i decyzje właściciela pensjonatu. Praktyczne wskazówki przed sezonem zimowym."
 slug: "podatek-wynajem-krotkoterminowy-poronin-case"
 category: "Prawo i formalności"
@@ -8,7 +8,7 @@ readTime: "9 min"
 updatedAt: "2 października 2026"
 excerpt: "Case study: Jak Jan z Poronina ogarnął podatki, ryczałt i kasę fiskalną w pensjonacie. Sprawdź konkretne liczby i jego wybory przed zimą 2026."
 ctaTitle: "Nie daj się zaskoczyć fiskusowi tej zimy"
-ctaDescription: "Chcesz mieć pewność, że Twoja oferta i formalności grają razem? Zrób to z WEBBROSKIDEV."
+ctaDescription: "Chcesz mieć pewność, że Twoja oferta i formalności grają razem? Zrób to z BROSYSTEMS."
 ctaLabel: "Zobacz ofertę"
 ctaHref: "/oferta"
 ---
@@ -16,7 +16,7 @@ Nie ma żartów, Urząd Skarbowy w Nowym Targu już od września wysyła pisma d
 
 ## Początek drogi: Jan i jego pensjonat w Poroninie
 
-Jan ma 58 lat, prowadzi pensjonat z żoną już od 2010 roku. Piętrowy dom, 6 pokoi, łazienki po remoncie, kawałek ogrodu. Przez lata ich goście to głównie rodziny z południa Polski i Wałbrzycha, trochę Czechów. Przyjeżdżają zwłaszcza na zimę i ferie, ale ostatnio coraz więcej weekendów łapie się na "krótki wypad w Tatry". Od kilku lat Jan wystawia pokoje przez Booking i własną stronę (w tym roku strona już na nowym systemie od WEBBROSKIDEV). Ostatnie dwa lata były dobre — zwłaszcza zeszłoroczny Sylwester, kiedy pełne obłożenie widział u siebie już od końca listopada.
+Jan ma 58 lat, prowadzi pensjonat z żoną już od 2010 roku. Piętrowy dom, 6 pokoi, łazienki po remoncie, kawałek ogrodu. Przez lata ich goście to głównie rodziny z południa Polski i Wałbrzycha, trochę Czechów. Przyjeżdżają zwłaszcza na zimę i ferie, ale ostatnio coraz więcej weekendów łapie się na "krótki wypad w Tatry". Od kilku lat Jan wystawia pokoje przez Booking i własną stronę (w tym roku strona już na nowym systemie od BROSYSTEMS). Ostatnie dwa lata były dobre — zwłaszcza zeszłoroczny Sylwester, kiedy pełne obłożenie widział u siebie już od końca listopada.
 
 Ale wiosną 2026 Urząd Skarbowy pyta o sposób rozliczenia. "Nie da się już zamieść pod dywan, trzeba mieć papier na wszystko" — jak mówi Jan. A podatki od najmu krótkoterminowego od 2025 roku są tematem coraz gorętszym.
 
@@ -86,7 +86,7 @@ Od maja 2024 r. kasa fiskalna obowiązuje każdego, kto świadczy usługi zakwat
 
 Zakup kasy to 1 300 zł netto (fałszywa oszczędność — Jan pytał sąsiada, kupił tańszą za 800 zł, awaria po 8 miesiącach). Dolicz wdrożenie i szkolenie: 400 zł. Rocznie serwis: 300 zł.
 
-Jan: "Poszliśmy w kasę online, bo muszę łączyć ją z systemem rezerwacji (Hotres przez WEBBROSKIDEV — wszystko działa jak trzeba, faktury idą automatycznie). Lepiej zapłacić na początku niż się głowić później."
+Jan: "Poszliśmy w kasę online, bo muszę łączyć ją z systemem rezerwacji (Hotres przez BROSYSTEMS — wszystko działa jak trzeba, faktury idą automatycznie). Lepiej zapłacić na początku niż się głowić później."
 
 Kalkulacja roczna:
 - 1 300 zł (kasa) + 300 zł (serwis) = **1 600 zł w pierwszym roku**
@@ -109,7 +109,7 @@ Jan podsumowuje: "Na papierze wyglądam jak milioner, a na koncie połowa tego, 
 
 ## Co się zmieniło, gdy Jan postawił na bezpośrednie rezerwacje?
 
-W tym roku, po inwestycji w nową stronę i system WEBBROSKIDEV z integracją Hotres, Jan zachęca do płatności bez pośredników. Efekt od razu po sezonie letnim:
+W tym roku, po inwestycji w nową stronę i system BROSYSTEMS z integracją Hotres, Jan zachęca do płatności bez pośredników. Efekt od razu po sezonie letnim:
 - W sierpniu 2026, 22 pobyty przez własną stronę (średnia wartość 1 750 zł każdy) = 38 500 zł przychodu
 - Booking w tym czasie: 28 900 zł przychodu (ale minus 15% prowizji = -4 335 zł)
 - Bezpośrednie rezerwacje — brak prowizji: **4 335 zł w kieszeni więcej w 1 miesiącu**
@@ -132,6 +132,6 @@ System podatkowy w Polsce bywa zawiły, zwłaszcza gdy liczby zaczynają szybko 
 
 Czy Ty wiesz, ile naprawdę zostanie z Twoich zimowych rezerwacji?
 
-**[Tekst zachęty do działania →](/oferta)**
+**[Uporządkuj rezerwacje i zautomatyzuj rozliczenia w swoim obiekcie →](/oferta)**
 
 *Autor: Krzysztof Żebrowski*

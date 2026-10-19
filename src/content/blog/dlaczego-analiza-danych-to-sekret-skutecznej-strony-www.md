@@ -7,7 +7,7 @@ category: "Technika, która sprzedaje"
 readTime: "7 min"
 updatedAt: "9 września 2026"
 excerpt: "Czy wiesz, że analiza danych może znacząco zwiększyć skuteczność Twojej strony WWW? Dowiedz się, jak wykorzystać dane, by zwiększyć liczbę rezerwacji."
-relatedSlugs: ["3-powody-dla-ktorych-twoja-strona-www-potrzebuje-aktualizacji-w-2026-roku", "jak-optimalizowac-strone-internetowa-dla-pensjonatu-pod-katem-rezerwacji-bezposrednich"]
+relatedSlugs: ["3-powody-dla-ktorych-strona-www-potrzebuje-aktualizacji-2026", "jak-optymalizowac-strone-pensjonatu-rezerwacje-bezposrednie"]
 ctaTitle: "Zmodernizuj swoją stronę już dziś!"
 ctaDescription: "Poznaj nowoczesne technologie, które pomogą Ci zwiększyć rezerwacje i zadowolenie gości."
 ctaLabel: "Porozmawiajmy"

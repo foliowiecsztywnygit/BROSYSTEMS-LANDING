@@ -120,6 +120,6 @@ Policzmy: przy 3-osobowej obsłudze, wydatek na prawnika to 3 x 150 zł = 450 z�
 
 Wszystkich Świętych i Black Friday to ostatni moment na poprawki przed atakiem sezonu zimowego. To, co możesz zrobić teraz za 1 000 zł lub mniej, pozwoli uniknąć strat na poziomie 5 000–20 000 zł. Czy Twoja strona i pensjonat są już gotowe na inspekcję, reklamację lub wymagającego gościa, który przyjedzie z rodziną pod Giewont?
 
-**[Tekst zachęty do działania →](/oferta)**
+**[Zabezpiecz swój pensjonat przed sezonem zimowym i uniknij kar →](/oferta)**
 
 *Autor: Krzysztof Żebrowski*

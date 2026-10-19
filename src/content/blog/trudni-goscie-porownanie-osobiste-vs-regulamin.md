@@ -1,6 +1,6 @@
 ---
 title: "Osobiście czy regulaminowo? Najtrudniejsi goście — co naprawdę działa w 2026"
-metaTitle: "Trudni goście: podejście osobiste vs regulamin | WEBBROSKIDEV - Krzysztof Żebrowski"
+metaTitle: "Trudni goście: podejście osobiste vs regulamin | BROSYSTEMS - Krzysztof Żebrowski"
 metaDescription: "Late check-out, reklamacje i zniszczenia w pensjonacie: uczciwe porównanie reakcji osobistej vs twardego regulaminu. Sprawdź, co opłaca się w 2026!"
 slug: "trudni-goscie-porownanie-osobiste-vs-regulamin"
 category: "Porady biznesowe"
@@ -96,6 +96,6 @@ Klucz? Dobrze napisany regulamin na stronie i uczciwa komunikacja. To, jak reagu
 
 Czy naprawdę wolisz stracić 200 zł na drobnym uszkodzeniu, czy może 2 000 zł na kilku negatywnych opiniach w gorącym sezonie?
 
-**[Zadbaj o spokojną obsługę i profesjonalną stronę — sprawdź ofertę WEBBROSKIDEV](/oferta)**
+**[Zadbaj o spokojną obsługę i profesjonalną stronę — sprawdź ofertę BROSYSTEMS →](/oferta)**
 
 *Autor: Krzysztof Żebrowski*

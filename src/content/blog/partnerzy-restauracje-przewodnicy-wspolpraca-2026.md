@@ -1,6 +1,6 @@
 ---
 title: "Partnerstwo z lokalnymi firmami zmienia rynek noclegowy — konkretne zyski i wyzwania na Podhalu"
-metaTitle: "Partnerstwo z lokalnymi firmami w turystyce | WEBBROSKIDEV - Krzysztof Żebrowski"
+metaTitle: "Partnerstwo z lokalnymi firmami w turystyce | BROSYSTEMS - Krzysztof Żebrowski"
 metaDescription: "Współpraca z restauracjami, przewodnikami czy wypożyczalniami może wyraźnie zwiększyć dochód pensjonatu. Sprawdź liczby i praktyczne przykłady."
 slug: "partnerzy-restauracje-przewodnicy-wspolpraca-2026"
 category: "Zarabianie na wynajmie"
@@ -124,7 +124,7 @@ Jeszcze czas, by przed zimą dogadać szczegóły i wdrożyć to na swojej stron
 
 Twarde liczby nie kłamią — pensjonat, który aktywnie współpracuje z lokalnymi wypożyczalniami, restauracjami i przewodnikami, zarabia kilka tysięcy złotych więcej w sezonie zimowym. Ten dodatkowy zysk leży w Twoim zasięgu – wystarczy wdrożyć prostą ofertę partnerów na stronie i zadbać o przejrzyste rozliczenia. Czy naprawdę warto kolejny sezon zostawić te pieniądze pośrednikom i konkurencji?
 
-**[Tekst zachęty do działania →](/oferta)**
+**[Zbuduj sieć lokalnych partnerów i zwiększ przychody pensjonatu →](/oferta)**
 
 *Autor: Krzysztof Żebrowski*
 

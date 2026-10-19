@@ -1,6 +1,6 @@
 ---
 title: "Nowe trendy w turystyce górskiej zmieniają rynek noclegowy — co to oznacza dla Ciebie"
-metaTitle: "Nowe trendy w turystyce górskiej 2026 | WEBBROSKIDEV - Krzysztof Żebrowski"
+metaTitle: "Nowe trendy w turystyce górskiej 2026 | BROSYSTEMS - Krzysztof Żebrowski"
 metaDescription: "Workation, digital nomads i slow travel to nowe wyzwania dla pensjonatów w górach. Sprawdź, czego oczekują dzisiejsi goście i jak możesz na tym zarobić."
 slug: "trendy-turystyka-gorska-workation-digital-nomads-slow-travel"
 category: "Sezon i strategia"
@@ -8,7 +8,7 @@ readTime: "9 min"
 updatedAt: "1 października 2026"
 excerpt: "Workation, digital nomads i slow travel już zmieniają Tatry i Podhale. Zobacz, kto płaci najwięcej i jakie udogodnienia są kluczem do sukcesu tej jesieni i zimy."
 ctaTitle: "Sprawdź, jak przygotować swój pensjonat na nowe trendy"
-ctaDescription: "Skorzystaj z doświadczenia WEBBROSKIDEV i zamień nowe trendy w realny zysk — zanim zrobi to konkurencja."
+ctaDescription: "Skorzystaj z doświadczenia BROSYSTEMS i zamień nowe trendy w realny zysk — zanim zrobi to konkurencja."
 ctaLabel: "Dowiedz się więcej"
 ctaHref: "/oferta"
 ---
@@ -42,7 +42,7 @@ Na koniec października, gdy „zwykli” goście już wracają do miast, **work
 
 Widać nową kategorię gości, zwłaszcza na Podhalu i w mniejszych miejscowościach wokół Zakopanego. To nie są już tylko „turyści z Kalwarii na majówkę”. To osoby szukające spokoju poza weekendem, chcące odpocząć od miasta, chodzące po szlakach nawet przy deszczu i mgłach.
 
-Widzę w systemach rezerwacji WEBBROSKIDEV, że:
+Widzę w systemach rezerwacji BROSYSTEMS, że:
 - **Średnia długość pobytu poza ścisłym sezonem skoczyła z 2,6 do 4,1 doby (2022 vs 2025)**
 - Goście slow travel szukają pokoi z widokiem, niekoniecznie z basenem czy spa, ale koniecznie z osobnym miejscem do pracy i czytania
 - Wydają na miejscu więcej na lokalne produkty i usługi — jedna para zostawia w pensjonacie (nocleg + śniadania + wypożyczenie roweru) **ponad 1 200 zł za 4 dni** (wcześniej: ok. 900 zł na 2-3 dni)
@@ -56,7 +56,7 @@ Widzę w systemach rezerwacji WEBBROSKIDEV, że:
 
 ## Sezon jesienny i nowi goście w Tatrach — czego szukają?
 
-W tym roku pierwszy śnieg na Kasprowym przyszedł pod koniec września. Pogoda zmienia plany, ale „nowoczesny turysta górski” jest elastyczny. Widzę w statystykach, że już **45% wejść na strony pensjonatów WEBBROSKIDEV w Podhalu pochodzi z telefonów** — goście szukają miejsc na pracę i wypoczynek w drodze, w pociągu, na szlaku.
+W tym roku pierwszy śnieg na Kasprowym przyszedł pod koniec września. Pogoda zmienia plany, ale „nowoczesny turysta górski” jest elastyczny. Widzę w statystykach, że już **45% wejść na strony pensjonatów BROSYSTEMS w Podhalu pochodzi z telefonów** — goście szukają miejsc na pracę i wypoczynek w drodze, w pociągu, na szlaku.
 
 Co decyduje o wyborze?
 - Zdjęcia miejsca do pracy (nie tylko łóżko!), informacja o szybkim Internecie z podaniem prędkości (np. 300 Mb/s, nie „dobre WiFi”) — to podnosi liczbę rezerwacji nawet o 20%
@@ -93,7 +93,7 @@ Za dwa miesiące rusza sezon zimowy. Wiem z doświadczenia — to ostatni moment
 ### Kalkulacja: Zysk z inwestycji w nowoczesną stronę
 
 Załóżmy realny scenariusz na październik/listopad:
-- Koszt przebudowy strony pod nowe potrzeby (WEBBROSKIDEV): 3 000–4 500 zł (jednorazowo)
+- Koszt przebudowy strony pod nowe potrzeby (BROSYSTEMS): 3 000–4 500 zł (jednorazowo)
 - Dodatkowe rezerwacje: min. 20 nocy roboczych x 230 zł = 4 600 zł
 - Przełożenie: inwestycja zwraca się po 5-6 tygodniach nowego sezonu, a potem miesięcznie zostaje zysk
 
@@ -117,6 +117,6 @@ Tymczasem pierwszy śnieg to już sygnał dla kogoś, kto planuje slow travel Ta
 
 Praca zdalna i nowe podejście do podróży już zmieniły Tatry, Zakopane i Szczyrk. Gość 2026 roku zostawia więcej, zostaje dłużej i wymaga prostych rozwiązań — zwłaszcza online. Kto się dostosuje, zyska nawet kilkanaście tysięcy złotych jeszcze przed zimą. Kto odpuści, zostanie z pustymi pokojami i fakturami do opłacenia. Czy Twoja strona jest gotowa na ten nowy typ gościa?
 
-**[Tekst zachęty do działania →](/oferta)**
+**[Przyciągnij gości na workation i zapełnij pokoje poza sezonem →](/oferta)**
 
 *Autor: Krzysztof Żebrowski*

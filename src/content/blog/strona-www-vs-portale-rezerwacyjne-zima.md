@@ -119,6 +119,6 @@ Nie ma jednej recepty. Jeśli chcesz prowadzić obiekt na pół gwizdka i nie lu
 
 Jak pokazują liczby, zostawianie całości rezerwacji w rękach portali to koszt równy miesięcznej pensji pracownika — co sezon. Przygotowanie obiektu noclegowego na zimę to nie tylko wymiana pościeli i sprawdzenie kaloryferów, ale też decyzje o tym, gdzie trafiają pieniądze z Twojej pracy. Dziś, kiedy sezon narciarski coraz częściej zaczyna się już w grudniu, własna strona przekłada się na realny zysk — i niezależność. Pytanie, na co wolisz wydać 27 tysięcy: na prowizje czy na rozwój własnego biznesu?
 
-**[Tekst zachęty do działania →](/oferta)**
+**[Odzyskaj kontrolę nad rezerwacjami i przestań tracić na prowizjach →](/oferta)**
 
 *Autor: Krzysztof Żebrowski*

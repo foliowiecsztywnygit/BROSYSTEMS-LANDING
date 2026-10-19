@@ -125,6 +125,6 @@ Ale jeśli tydzień przed świętami masz wciąż wolnych 40% pokoi, możesz prz
 
 Każdy pensjonat — czy z Poronina, Zakopanego, czy Szczyrku — może zarobić więcej dzięki elastycznemu cennikowi. Sztywna cena zabija przychód w słabych okresach, a niepotrzebnie zaniża marżę w szczycie. Przelicz to sam: sezon, promocja, własna strona — zyski masz czarne na białym. Czy Twój cennik pensjonat jest gotowy na zimę 2026?
 
-**[Tekst zachęty do działania →](/oferta)**
+**[Zoptymalizuj politykę cenową i zarabiaj więcej w każdym sezonie →](/oferta)**
 
 *Autor: Krzysztof Żebrowski*

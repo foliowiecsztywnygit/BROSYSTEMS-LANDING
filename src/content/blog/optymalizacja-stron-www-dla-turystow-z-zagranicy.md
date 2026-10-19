@@ -7,7 +7,7 @@ category: "Technika, która sprzedaje"
 readTime: "6 min"
 updatedAt: "13 września 2026"
 excerpt: "Czy Twoja strona przyciąga turystów z zagranicy? Sprawdź, jak zoptymalizować swoją stronę WWW, aby zwiększyć rezerwacje bezpośrednie od zagranicznych gości."
-relatedSlugs: ["jak-przyciągnąć-więcej-gości-dzięki-systemowi-rezerwacji-na-stronę-w-2026-roku", "jak-zwięszyć-rezerwacje-bezpośrednie-dzięki-optymalizacji-strony-www"]
+relatedSlugs: ["jak-przyciagnac-wiecej-gosci-dzieki-systemowi-rezerwacji-2026", "jak-zwiekszyc-rezerwacje-bezposrednie-optymalizacja-strony-www"]
 ctaTitle: "Zoptymalizuj swoją stronę dla turystów z zagranicy"
 ctaDescription: "Czy Twoja strona przyciąga zagranicznych turystów? Skontaktuj się z nami i dowiedz się, jak możemy pomóc."
 ctaLabel: "Porozmawiajmy"
