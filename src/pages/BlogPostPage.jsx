@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import TopBar from '../components/TopBar';
 import Navbar from '../components/Navbar';
@@ -60,7 +61,64 @@ const BlogPostPage = () => {
             <article className={`${styles.contentCol} ${styles.sectionSpacing}`}>
               {post.content.split(/(?=^##\s)/m).filter(c => c.trim() !== '').map((chunk, idx) => (
                 <section key={idx} className={styles.sectionCard}>
-                  <ReactMarkdown rehypePlugins={[rehypeRaw]}>{chunk}</ReactMarkdown>
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    rehypePlugins={[rehypeRaw]}
+                    components={{
+                      table: ({ node, ...props }) => (
+                        <div className={styles.tableWrapper}>
+                          <table className={styles.markdownTable} {...props} />
+                        </div>
+                      ),
+                      a: ({ node, href, children, ...props }) => {
+                        const textContent = Array.isArray(children)
+                          ? children.map((c) => (typeof c === 'string' ? c : '')).join('')
+                          : typeof children === 'string'
+                            ? children
+                            : '';
+
+                        const isCta =
+                          (href === '/oferta' || href?.startsWith('/oferta')) &&
+                          (textContent.includes('→') ||
+                            textContent.toLowerCase().includes('oferta') ||
+                            textContent.toLowerCase().includes('działania'));
+
+                        if (isCta) {
+                          return (
+                            <Link to={href} className={styles.blogCta} {...props}>
+                              {children}
+                            </Link>
+                          );
+                        }
+                        if (href?.startsWith('/') || href?.startsWith('#')) {
+                          return (
+                            <Link to={href} {...props}>
+                              {children}
+                            </Link>
+                          );
+                        }
+                        return (
+                          <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+                            {children}
+                          </a>
+                        );
+                      },
+                      p: ({ node, children, ...props }) => {
+                        const firstChild = node?.children?.[0];
+                        const isAuthor =
+                          firstChild?.tagName === 'em' &&
+                          typeof firstChild?.children?.[0]?.value === 'string' &&
+                          firstChild.children[0].value.startsWith('Autor:');
+
+                        if (isAuthor) {
+                          return <p className={styles.blogAuthor} {...props}>{children}</p>;
+                        }
+                        return <p {...props}>{children}</p>;
+                      }
+                    }}
+                  >
+                    {chunk}
+                  </ReactMarkdown>
                 </section>
               ))}
             </article>

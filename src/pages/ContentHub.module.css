@@ -107,7 +107,34 @@
   padding: 1.75rem;
 }
 
-.sectionCard h2,
+/* Headings inside cards */
+.sectionCard h2 {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.sectionCard h3 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.85rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.35;
+}
+
+.sectionCard h4 {
+  margin-top: 1.35rem;
+  margin-bottom: 0.65rem;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #e4e4e7;
+  line-height: 1.4;
+}
+
 .listCard h2,
 .asideCard h3,
 .postCard h2,
@@ -118,7 +145,18 @@
   color: var(--text);
 }
 
-.sectionCard p,
+/* Body text */
+.sectionCard p {
+  color: var(--gray-dark);
+  line-height: 1.8;
+  font-size: 1.02rem;
+  margin-bottom: 1.15rem;
+}
+
+.sectionCard p:last-child {
+  margin-bottom: 0;
+}
+
 .listCard p,
 .asideCard p,
 .postCard p {
@@ -127,9 +165,222 @@
   font-size: 1.05rem;
 }
 
-.sectionCard p + p,
 .postCard p + p {
   margin-top: 1rem;
+}
+
+.sectionCard strong,
+.sectionCard b {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.sectionCard em,
+.sectionCard i {
+  font-style: italic;
+}
+
+.sectionCard a {
+  color: #c084fc;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.sectionCard a:hover {
+  color: #e9d5ff;
+}
+
+/* Lists styling inside blog article cards */
+.sectionCard ul {
+  list-style: none;
+  margin: 1.25rem 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sectionCard ul > li {
+  position: relative;
+  padding-left: 1.6rem;
+  color: var(--gray-dark);
+  line-height: 1.75;
+  font-size: 1.02rem;
+}
+
+.sectionCard ul > li::before {
+  content: '';
+  position: absolute;
+  left: 0.25rem;
+  top: 0.65rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #c084fc;
+  box-shadow: 0 0 8px rgba(192, 132, 252, 0.6);
+}
+
+.sectionCard ol {
+  counter-reset: post-counter;
+  list-style: none;
+  margin: 1.25rem 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sectionCard ol > li {
+  counter-increment: post-counter;
+  position: relative;
+  padding-left: 2rem;
+  color: var(--gray-dark);
+  line-height: 1.75;
+  font-size: 1.02rem;
+}
+
+.sectionCard ol > li::before {
+  content: counter(post-counter) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #c084fc;
+  font-weight: 700;
+  font-family: var(--font-heading);
+}
+
+.sectionCard ul ul,
+.sectionCard ol ol,
+.sectionCard ul ol,
+.sectionCard ol ul {
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+
+/* Responsive Table styling inside blog article cards */
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.75rem 0;
+  border: 1px solid var(--gray-mid);
+  border-radius: 1rem;
+  background: rgba(18, 18, 22, 0.75);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  scrollbar-width: thin;
+  scrollbar-color: var(--gray-mid) transparent;
+}
+
+.tableWrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.tableWrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tableWrapper::-webkit-scrollbar-thumb {
+  background: var(--gray-mid);
+  border-radius: 999px;
+}
+
+.tableWrapper::-webkit-scrollbar-thumb:hover {
+  background: var(--purple-dark);
+}
+
+.markdownTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.markdownTable thead {
+  background: rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid var(--gray-mid);
+}
+
+.markdownTable th {
+  padding: 0.85rem 1rem;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #d8b4fe;
+}
+
+.markdownTable td {
+  padding: 0.85rem 1rem;
+  color: var(--gray-dark);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  vertical-align: middle;
+}
+
+.markdownTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.markdownTable tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.markdownTable tbody tr:hover {
+  background-color: rgba(160, 32, 240, 0.05);
+}
+
+.markdownTable td:first-child {
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Blockquotes, Code, Pre, HR */
+.sectionCard blockquote {
+  border-left: 3px solid var(--purple-dark);
+  background: rgba(160, 32, 240, 0.06);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 0 0.75rem 0.75rem 0;
+  font-style: italic;
+  color: #e4e4e7;
+}
+
+.sectionCard blockquote p {
+  color: #e4e4e7;
+  margin-bottom: 0;
+}
+
+.sectionCard code {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.45rem;
+  border-radius: 0.35rem;
+  font-size: 0.88em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  color: #f472b6;
+}
+
+.sectionCard pre {
+  background: #09090b;
+  border: 1px solid var(--gray-mid);
+  border-radius: 0.75rem;
+  padding: 1.15rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.sectionCard pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #e4e4e7;
+}
+
+.sectionCard hr {
+  border: none;
+  border-top: 1px solid var(--gray-mid);
+  margin: 2rem 0;
 }
 
 .bulletList {
@@ -229,30 +480,69 @@
   .asideCard {
     padding: 1.35rem;
   }
+
+  .markdownTable th,
+  .markdownTable td {
+    padding: 0.75rem 0.9rem;
+    font-size: 0.88rem;
+  }
 }
 
+.blogCta,
 :global(.blog-cta) {
-  display: block;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 520px;
   text-align: center;
   padding: 1rem 2rem;
-  margin: 2.5rem 0;
-  border: 1px solid var(--text, #fff);
+  margin: 1.75rem auto 1rem;
+  border: 1px solid var(--purple-dark);
   border-radius: 9999px;
-  background: transparent;
-  color: var(--text, #fff);
-  text-decoration: none;
-  font-weight: 500;
+  background: rgba(160, 32, 240, 0.15);
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 700;
+  font-size: 1.05rem;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(160, 32, 240, 0.25);
 }
 
+.blogCta:hover,
 :global(.blog-cta):hover {
-  background: var(--text, #fff);
-  color: var(--bg, #000);
+  background: var(--purple-dark);
+  border-color: #c084fc;
+  color: #ffffff !important;
+  box-shadow: 0 0 25px rgba(160, 32, 240, 0.5);
+  transform: translateY(-2px);
 }
 
+.sectionCard a.blogCta,
+.sectionCard a:global(.blog-cta) {
+  text-decoration: none !important;
+  color: #ffffff !important;
+}
+
+.sectionCard p:has(.blogCta),
+.sectionCard p:has(:global(.blog-cta)) {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.sectionCard p:has(.blogCta) strong,
+.sectionCard p:has(:global(.blog-cta)) strong {
+  display: block;
+  width: 100%;
+}
+
+.blogAuthor,
 :global(.blog-author) {
   font-style: italic;
   margin-top: 2rem;
   text-align: right;
   color: var(--gray-dark);
+  font-size: 0.95rem;
 }
