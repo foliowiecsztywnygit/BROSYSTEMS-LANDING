@@ -8,6 +8,9 @@ const GooeyButton = ({
   variant = 'primary',
   size = 'default',
   className = '',
+  target,
+  rel,
+  ...props
 }) => {
   const content = (
     <span className={`${styles.wrapper} ${styles[variant]} ${styles[size]}`}>
@@ -22,14 +25,21 @@ const GooeyButton = ({
 
   if (href) {
     return (
-      <a href={href} className={`${styles.btn} ${className}`} onClick={onClick}>
+      <a
+        href={href}
+        className={`${styles.btn} ${className}`}
+        onClick={onClick}
+        target={target}
+        rel={rel}
+        {...props}
+      >
         {content}
       </a>
     );
   }
 
   return (
-    <button className={`${styles.btn} ${className}`} onClick={onClick}>
+    <button className={`${styles.btn} ${className}`} onClick={onClick} {...props}>
       {content}
     </button>
   );

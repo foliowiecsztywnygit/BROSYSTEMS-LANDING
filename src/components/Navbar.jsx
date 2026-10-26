@@ -49,9 +49,9 @@ const Navbar = () => {
     <>
       <header data-navbar ref={navRef} className={`${styles.navbar} ${scrolled ? styles.scrolled : styles.top} ${menuOpen ? styles.menuOpen : ''}`}>
         <div className={`container ${styles.navContainer}`}>
-          <a href="#" className={styles.logo}>
+          <Link to="/" className={styles.logo} onClick={closeMenu}>
             <img src="/logo.png" alt="BroSystems Logo" className={styles.logoImage} />
-          </a>
+          </Link>
           {/* Hamburger button — mobile only */}
           <button
             className={`${styles.hamburger} ${menuOpen ? styles.hamburgerActive : ''}`}
@@ -64,13 +64,23 @@ const Navbar = () => {
             <span className={styles.hamburgerLine} />
           </button>
 
-          {/* Desktop nav links (unchanged) + Mobile dropdown */}
+          {/* Desktop nav links + Mobile dropdown */}
           <nav className={`${styles.navLinks} ${menuOpen ? styles.navLinksOpen : ''}`}>
             <Link to="/oferta" onClick={closeMenu}>Oferta</Link>
             <Link to="/blog" onClick={closeMenu}>Blog</Link>
             <a href="/#portfolio" onClick={closeMenu}>Realizacje</a>
             <div className={styles.navBtnWrapper}>
               <GooeyButton href="/#kontakt" variant="outline" onClick={closeMenu}>Kontakt</GooeyButton>
+              <GooeyButton
+                href="https://dashboard.brosystems.pl/cm/"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="primary"
+                title="Panel Channel Manager"
+                onClick={closeMenu}
+              >
+                Panel CM
+              </GooeyButton>
             </div>
           </nav>
         </div>
@@ -95,4 +105,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
