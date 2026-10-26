@@ -5,63 +5,143 @@
   padding-bottom: 100px;
 }
 
-/* Full-width hero without navbar spacing */
-.heroSection {
-  padding: 180px 0 80px;
-  text-align: center;
+/* =====================================
+   Hero Video Section (at the very top)
+   ===================================== */
+.heroVideoSection {
+  padding: 130px 0 35px;
   position: relative;
   overflow: hidden;
 }
 
-.heroSection::before {
+.heroVideoSection::before {
   content: '';
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(160, 32, 240, 0.08) 0%, transparent 70%);
+  width: 750px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(160, 32, 240, 0.12) 0%, transparent 70%);
   pointer-events: none;
 }
 
-.heroInner {
-  max-width: 800px;
+.videoContainer {
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.25rem;
   position: relative;
   z-index: 1;
 }
 
-.badge {
-  display: inline-flex;
+/* Rotate notice banner */
+.rotateNotice {
+  width: 100%;
+  display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #d8b4fe;
+  gap: 1rem;
+  padding: 0.9rem 1.25rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(160, 32, 240, 0.14) 0%, rgba(20, 20, 26, 0.92) 100%);
+  border: 1px solid rgba(160, 32, 240, 0.35);
+  box-shadow: 0 4px 20px rgba(160, 32, 240, 0.12);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rotateNotice:hover {
+  border-color: rgba(160, 32, 240, 0.6);
+  box-shadow: 0 6px 25px rgba(160, 32, 240, 0.2);
+}
+
+.rotateIconBox {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(160, 32, 240, 0.2);
+  border: 1px solid rgba(160, 32, 240, 0.45);
+  display: flex;
+  align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
-.heroTitle {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 800;
-  line-height: 1.1;
-  text-transform: none;
+.rotatePhoneIcon {
+  width: 22px;
+  height: 22px;
+  color: #fff;
+  animation: phoneTiltAnim 2.6s ease-in-out infinite;
+  transform-origin: center;
 }
 
-.heroTitle strong {
-  color: var(--purple-dark);
+.rotateArrowIcon {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 15px;
+  height: 15px;
+  color: #d8b4fe;
+  animation: spinSlow 4s linear infinite;
 }
 
-.heroSub {
+@keyframes phoneTiltAnim {
+  0%, 20% {
+    transform: rotate(0deg);
+  }
+  45%, 75% {
+    transform: rotate(-90deg);
+  }
+  90%, 100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.rotateTextBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: left;
+}
+
+.rotateTitle {
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.phoneEmoji {
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+.rotateDesc {
+  font-size: 0.84rem;
   color: var(--gray-dark);
-  font-size: 1.15rem;
-  line-height: 1.7;
-  max-width: 620px;
+  line-height: 1.45;
+}
+
+.videoPlayerWrapper {
+  width: 100%;
+}
+
+.videoCaption {
+  text-align: center;
+  color: var(--gray-dark);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  max-width: 650px;
   margin: 0 auto;
 }
 
@@ -128,31 +208,6 @@
   color: var(--gray-dark);
   font-size: 0.92rem;
   line-height: 1.65;
-}
-
-/* Video section */
-.videoSection {
-  max-width: 900px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.videoLabel {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.videoLabel h2 {
-  font-size: clamp(1.4rem, 3vw, 2rem);
-  font-weight: 800;
-}
-
-.videoLabel p {
-  color: var(--gray-dark);
-  font-size: 0.95rem;
 }
 
 /* Advantages */
@@ -430,9 +485,32 @@
   margin-top: 0.25rem;
 }
 
+@media (max-width: 900px) and (orientation: landscape) {
+  .heroVideoSection {
+    padding: 70px 0 20px;
+  }
+
+  .rotateNotice {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
-  .heroSection {
-    padding: 140px 0 50px;
+  .heroVideoSection {
+    padding: 105px 0 24px;
+  }
+
+  .rotateNotice {
+    padding: 0.8rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .rotateTitle {
+    font-size: 0.92rem;
+  }
+
+  .rotateDesc {
+    font-size: 0.8rem;
   }
 
   .container {

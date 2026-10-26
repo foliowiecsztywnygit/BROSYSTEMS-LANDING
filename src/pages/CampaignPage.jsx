@@ -9,7 +9,7 @@ const painPoints = [
   {
     emoji: '📞',
     title: 'Telefony o każdej porze',
-    description: 'Goście dzwonią o 22:00, w niedzielę, w Wigillię. Pytają o to samo: „Czy macie wolne?" — a Ty musisz odbierać, bo inaczej tracisz rezerwację.',
+    description: 'Goście dzwonią o 22:00, w niedzielę, w Wigilię. Pytają o to samo: „Czy macie wolne?” — a Ty musisz odbierać, bo inaczej tracisz rezerwację.',
   },
   {
     emoji: '💸',
@@ -101,16 +101,54 @@ const CampaignPage = () => {
       <TopBar />
       <Navbar />
       <main className={styles.pageMain}>
-        {/* Hero */}
-        <section className={styles.heroSection}>
-          <div className={`container ${styles.heroInner}`}>
-            <span className={styles.badge}>Dla właścicieli pensjonatów, domków i willi</span>
-            <h1 className={styles.heroTitle}>
-              Ile gości traci Twój pensjonat, bo <strong>nie masz systemu rezerwacji</strong> na stronie?
-            </h1>
-            <p className={styles.heroSub}>
-              Goście chcą rezerwować od razu — nie dzwonić, nie pisać, nie czekać.
-              Jeśli Twoja strona tego nie umożliwia, tracisz ich na rzecz konkurencji z Booking.
+        {/* Film na samej górze z zachętą do obrotu telefonu */}
+        <section className={styles.heroVideoSection}>
+          <div className={`container ${styles.videoContainer}`}>
+            {/* Zachęta do przekręcenia telefonu */}
+            <div className={styles.rotateNotice}>
+              <div className={styles.rotateIconBox}>
+                <svg
+                  className={styles.rotatePhoneIcon}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect x="5" y="2" width="14" height="20" rx="3" />
+                  <line x1="12" y1="18" x2="12.01" y2="18" strokeWidth="2.5" />
+                </svg>
+                <svg
+                  className={styles.rotateArrowIcon}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M21 12A9 9 0 0 0 6 5.3L3 8" />
+                  <path d="M3 3v5h5" />
+                </svg>
+              </div>
+              <div className={styles.rotateTextBox}>
+                <div className={styles.rotateTitle}>
+                  Przekręć telefon poziomo przed rozpoczęciem <span className={styles.phoneEmoji}>📱</span>
+                </div>
+                <div className={styles.rotateDesc}>
+                  Obróć ekran w bok, aby wygodnie zobaczyć kalendarz i działanie systemu w pełnej szerokości
+                </div>
+              </div>
+            </div>
+
+            {/* Odtwarzacz wideo */}
+            <div className={styles.videoPlayerWrapper}>
+              <VideoPlayer src="/demo.mp4" label="Kliknij, żeby obejrzeć demo" />
+            </div>
+
+            <p className={styles.videoCaption}>
+              Zobacz w 2 minuty, jak goście rezerwują pobyt i płacą zadatek bezpośrednio na Twojej stronie.
             </p>
           </div>
         </section>
@@ -131,15 +169,6 @@ const CampaignPage = () => {
                 </div>
               ))}
             </div>
-          </section>
-
-          {/* Video */}
-          <section className={styles.videoSection}>
-            <div className={styles.videoLabel}>
-              <h2>Zobacz jak to działa w praktyce</h2>
-              <p>Cały proces od wejścia gościa na stronę, przez rezerwację, aż po automatyczną płatność</p>
-            </div>
-            <VideoPlayer src="/demo.mp4" label="Kliknij, żeby obejrzeć demo" />
           </section>
 
           {/* Advantages */}
@@ -197,7 +226,7 @@ const CampaignPage = () => {
             </div>
             <p className={styles.proofQuote}>
               „Przez 3 lata oddawałem Bookingowi po 15% z każdej nocy. Teraz ponad połowa rezerwacji
-              przychodzi przez moją stronę i każda złotówka zostaje u mnie."
+              przychodzi przez moją stronę i każda złotówka zostaje u mnie.”
             </p>
           </section>
 
