@@ -3,7 +3,7 @@ import styles from './Process.module.css';
 
 const steps = [
   { title: 'Kontakt', desc: 'Opowiedz mi o <strong>swojej wizji</strong> i celu strony.', threshold: 15 },
-  { title: 'Umowa', desc: 'Podpisujemy umowę przez platformę UseMe, Zbieramy Materiały i <strong>ustalamy szczegóły</strong> działania. ', threshold: 35 },
+  { title: 'Warunki i Plan', desc: 'Ustalamy warunki, dobieramy plan i zakres wdrożenia, zbieramy materiały i <strong>konfigurujemy system</strong>.', threshold: 35 },
   { title: 'Projekt', desc: 'Tworzę dedykowany design i <strong>czysty kod</strong> od zera. Bez kompromisów.', threshold: 60 },
   { title: 'Poprawki i Wdrożenie', desc: 'Ostatnie szlify, testy optymalizacji, wyświetlania na wszystkich urządzeniach i <strong>start online</strong>.', threshold: 85 }
 ];

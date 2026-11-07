@@ -3,12 +3,12 @@ import SectionSubtitle from './ui/SectionSubtitle';
 import styles from './Partners.module.css';
 
 const basePartners = [
-  { name: "Hotres", img: "/tech_partners_white/hotres.png", colorImg: "/tech_partners/hotres.png" },
+  { name: "Beds24", img: "/tech_partners_white/beds24.svg", colorImg: "/tech_partners/beds24.svg" },
+  { name: "Stripe", img: "/tech_partners_white/stripe.svg", colorImg: "/tech_partners/stripe.svg" },
   { name: "Booking.com", img: "/tech_partners_white/booking.png", colorImg: "/tech_partners/booking.png" },
+  { name: "Airbnb", img: "/tech_partners_white/airbnb.svg", colorImg: "/tech_partners/airbnb.svg" },
   { name: "Google Ads", img: "/tech_partners_white/google_ads.png", colorImg: "/tech_partners/google_ads.png" },
-  { name: "Google Search Console", img: "/tech_partners_white/google_search_console.png", colorImg: "/tech_partners/google_search_console.png" },
-  { name: "Vercel", img: "/tech_partners_white/vercel.png", colorImg: "/tech_partners/vercel.png" },
-  { name: "Useme", img: "/tech_partners_white/useme_logo.png", colorImg: "/tech_partners/useme_logo.png" }
+  { name: "Google Search Console", img: "/tech_partners_white/google_search_console.png", colorImg: "/tech_partners/google_search_console.png" }
 ];
 
 // Dwa zestawy wystarczają do płynnej pętli, a zmniejszają liczbę renderowanych logotypów.

@@ -130,7 +130,7 @@ const DemoPage = () => {
             </div>
             <p className={styles.proofQuote}>
               „W sezonie traciłem po kilkanaście tysięcy miesięcznie na prowizjach.
-              Teraz goście rezerwują przez moją stronę, a ja mam pełną kontrolę nad kalendarzem i cenami."
+              Teraz goście rezerwują przez moją stronę, a ja mam pełną kontrolę nad kalendarzem i cenami.”
             </p>
           </section>
 

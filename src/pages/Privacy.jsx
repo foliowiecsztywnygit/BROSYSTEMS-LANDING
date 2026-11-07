@@ -11,7 +11,7 @@ const Privacy = () => {
       <Helmet>
         <title>Polityka Prywatności | BroSystems</title>
         <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://www.brosystems.pl/polityka-prywatnosci" />
+        <link rel="canonical" href="https://brosystems.pl/polityka-prywatnosci" />
       </Helmet>
       <TopBar />
       <Navbar />
@@ -20,19 +20,19 @@ const Privacy = () => {
           <Breadcrumbs paths={[{ name: 'Strona Główna', url: '/' }, { name: 'Polityka Prywatności', url: '/polityka-prywatnosci' }]} />
           <div className={styles.header}>
             <h1 className="heading-lg">Polityka Prywatności</h1>
-            <p className={styles.lastUpdated}>Ostatnia aktualizacja: 30 kwietnia 2026 r.</p>
+            <p className={styles.lastUpdated}>Ostatnia aktualizacja: 1 listopada 2026 r.</p>
           </div>
           
           <div className={styles.content}>
             <section className={styles.section}>
               <h2>1. Informacje ogólne</h2>
-              <p>Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych przekazanych przez Użytkowników w związku z korzystaniem z usług i strony internetowej prowadzonej przez BroSystems Krzysztof Żebrowski (dalej &quot;Administrator&quot;).</p>
-              <p>Polityka jest zgodna z wymogami Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych (RODO).</p>
+              <p>Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych przekazywanych przez Użytkowników oraz Klientów w związku z korzystaniem z witryny internetowej oraz usług wdrożeniowych świadczonych przez markę <strong>BroSystems</strong> (zwaną dalej &quot;Administratorem&quot;).</p>
+              <p>Polityka jest w pełni zgodna z przepisami Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych (RODO).</p>
             </section>
 
             <section className={styles.section}>
               <h2>2. Administrator Danych Osobowych</h2>
-              <p>Administratorem Twoich danych osobowych jest Krzysztof Żebrowski, działający pod marką BroSystems jako osoba fizyczna nieprowadząca działalności gospodarczej. Możesz skontaktować się z Administratorem:</p>
+              <p>Administratorem Twoich danych osobowych jest Krzysztof Żebrowski, reprezentujący markę technologiczną <strong>BroSystems</strong>. Możesz skontaktować się z Administratorem:</p>
               <ul>
                 <li>Za pośrednictwem poczty elektronicznej: <strong>kontakt@brosystems.pl</strong></li>
                 <li>Telefonicznie: <strong>+48 600 176 361</strong></li>
@@ -43,20 +43,21 @@ const Privacy = () => {
               <h2>3. Cele i podstawy prawne przetwarzania</h2>
               <p>Twoje dane osobowe mogą być przetwarzane w następujących celach:</p>
               <ul>
-                <li><strong>Świadczenie usług i realizacja umów:</strong> (np. tworzenie stron www, aplikacji) na podstawie art. 6 ust. 1 lit. b RODO.</li>
-                <li><strong>Kontakt z Użytkownikiem:</strong> (np. odpowiedź na wiadomości z formularza lub email) na podstawie prawnie uzasadnionego interesu Administratora (art. 6 ust. 1 lit. f RODO).</li>
-                <li><strong>Realizacja obowiązków prawnych:</strong> (np. wystawianie faktur, prowadzenie dokumentacji księgowej) na podstawie art. 6 ust. 1 lit. c RODO.</li>
-                <li><strong>Działania analityczne i statystyczne:</strong> (np. analiza ruchu na stronie) na podstawie wyrażonej zgody (art. 6 ust. 1 lit. a RODO) oraz prawnie uzasadnionego interesu.</li>
+                <li><strong>Świadczenie usług i realizacja wdrożeń technologicznych:</strong> projektowanie stron www, wdrożenie silnika rezerwacji bezpośrednich, konfiguracja modułu Channel Manager Beds24, integracje API z portalami noclegowymi oraz wsparcie techniczne – na podstawie art. 6 ust. 1 lit. b RODO.</li>
+                <li><strong>Procesowanie płatności i subskrypcji:</strong> obsługa transakcji elektronicznych za pośrednictwem operatora Stripe – na podstawie art. 6 ust. 1 lit. b oraz lit. c RODO.</li>
+                <li><strong>Kontakt z Użytkownikiem:</strong> odpowiedzi na zapytania ofertowe, kontakt telefoniczny, e-mail lub komunikatory – na podstawie prawnie uzasadnionego interesu Administratora (art. 6 ust. 1 lit. f RODO).</li>
+                <li><strong>Wypełnianie obowiązków prawnych:</strong> prowadzenie dokumentacji rozliczeniowej i księgowej – na podstawie art. 6 ust. 1 lit. c RODO.</li>
+                <li><strong>Działania analityczne, statystyczne i bezpieczeństwa:</strong> optymalizacja wydajności strony, analiza ruchu oraz ochrona przed spamem i nadużyciami – na podstawie art. 6 ust. 1 lit. a oraz lit. f RODO.</li>
               </ul>
             </section>
 
             <section className={styles.section}>
               <h2>4. Okres przechowywania danych</h2>
-              <p>Twoje dane osobowe będą przechowywane przez okres niezbędny do realizacji celu, dla którego zostały zebrane:</p>
+              <p>Twoje dane osobowe będą przechowywane przez okres niezbędny do realizacji celów, dla których zostały zebrane:</p>
               <ul>
-                <li>Dane związane z umowami – przez czas ich trwania, a po ich zakończeniu przez okres wynikający z przepisów prawa (np. przedawnienie roszczeń – do 3 lub 6 lat, dane księgowe – 5 lat).</li>
-                <li>Dane przetwarzane na podstawie zgody – do momentu jej cofnięcia.</li>
-                <li>Dane zebrane do celów kontaktowych – do momentu wniesienia skutecznego sprzeciwu lub zakończenia korespondencji.</li>
+                <li>Dane związane z umowami wdrożeniowymi i subskrypcjami – przez czas trwania współpracy, a po jej zakończeniu przez okres wymagany przepisami prawa (m.in. przedawnienie roszczeń oraz wymogi rozliczeniowe – do 5 lat).</li>
+                <li>Dane przetwarzane na podstawie zgody (np. cookies analityczne) – do momentu jej wycofania.</li>
+                <li>Dane kontaktowe – do momentu zakończenia korespondencji lub wniesienia skutecznego sprzeciwu.</li>
               </ul>
             </section>
 
@@ -69,39 +70,41 @@ const Privacy = () => {
                 <li>Prawo do usunięcia danych (tzw. &quot;prawo do bycia zapomnianym&quot;).</li>
                 <li>Prawo do ograniczenia przetwarzania danych.</li>
                 <li>Prawo do przenoszenia danych.</li>
-                <li>Prawo wniesienia sprzeciwu wobec przetwarzania.</li>
-                <li>Prawo do cofnięcia zgody w dowolnym momencie (jeśli przetwarzanie odbywa się na jej podstawie).</li>
+                <li>Prawo wniesienia sprzeciwu wobec przetwarzania danych opartego na prawnie uzasadnionym interesie.</li>
+                <li>Prawo do cofnięcia zgody w dowolnym momencie bez wpływu na zgodność z prawem wcześniejszego przetwarzania.</li>
+                <li>Prawo wniesienia skargi do organu nadzorczego (Prezesa Urzędu Ochrony Danych Osobowych).</li>
               </ul>
-              <p>W celu realizacji swoich praw, skontaktuj się z Administratorem pod adresem: kontakt@brosystems.pl.</p>
+              <p>W celu realizacji powyższych praw wystarczy wysłać wiadomość na adres: <strong>kontakt@brosystems.pl</strong>.</p>
             </section>
 
             <section className={styles.section}>
               <h2>6. Pliki Cookies (Ciasteczka)</h2>
-              <p>Nasza strona wykorzystuje pliki cookies (ciasteczka) w celu zapewnienia jej prawidłowego działania, celów analitycznych i statystycznych. Cookies to niewielkie pliki tekstowe zapisywane na urządzeniu końcowym Użytkownika.</p>
+              <p>Nasza strona wykorzystuje pliki cookies (ciasteczka) w celu zapewnienia jej stabilnego działania, wygody korzystania oraz w celach analitycznych. Cookies to niewielkie pliki tekstowe zapisywane na urządzeniu końcowym Użytkownika.</p>
               <h3>Rodzaje wykorzystywanych cookies:</h3>
               <ul>
-                <li><strong>Niezbędne (Techniczne):</strong> Konieczne do prawidłowego funkcjonowania strony. Nie mogą zostać wyłączone. (np. zapisywanie preferencji dotyczących zgody na cookies).</li>
-                <li><strong>Analityczne:</strong> Pomagają zrozumieć, w jaki sposób Użytkownicy korzystają ze strony, co pozwala na jej ulepszanie. (np. Google Analytics). Korzystamy z nich wyłącznie za Twoją zgodą.</li>
-                <li><strong>Marketingowe:</strong> Używane do śledzenia Użytkowników w witrynach. Służą do wyświetlania trafnych i angażujących reklam. Używane wyłącznie za Twoją zgodą.</li>
+                <li><strong>Niezbędne (Techniczne):</strong> Konieczne do prawidłowego funkcjonowania witryny (np. zapamiętanie zgód cookies, prawidłowe renderowanie komponentów). Nie mogą zostać wyłączone.</li>
+                <li><strong>Analityczne:</strong> Pomagają analizować ruch na stronie i optymalizować doświadczenie użytkowników (np. Google Analytics). Wykorzystywane wyłącznie po wyrażeniu dobrowolnej zgody.</li>
+                <li><strong>Marketingowe:</strong> Służące do mierzenia efektywności kampanii promocyjnych. Aktywowane wyłącznie za Twoją zgodą.</li>
               </ul>
               <h3>Zarządzanie plikami cookies:</h3>
-              <p>Użytkownik ma możliwość zarządzania plikami cookies z poziomu ustawień swojej przeglądarki internetowej oraz za pomocą panelu preferencji cookies dostępnego na naszej stronie.</p>
+              <p>Użytkownik może w każdej chwili zmienić preferencje dotyczące cookies w ustawieniach swojej przeglądarki internetowej lub za pomocą banera preferencji na naszej stronie.</p>
             </section>
 
             <section className={styles.section}>
               <h2>7. Odbiorcy Danych (Przekazywanie danych)</h2>
-              <p>Twoje dane mogą być przekazywane podmiotom przetwarzającym je na zlecenie Administratora (tzw. procesorom), m.in.:</p>
+              <p>Dla zagwarantowania najwyższego standardu bezpieczeństwa i niezawodności systemów, Twoje dane mogą być powierzane sprawdzonym podmiotom zewnętrznym:</p>
               <ul>
-                <li>dostawcom usług hostingowych (np. Vercel),</li>
-                <li>platformie <strong>UseMe.com</strong> (Useme Sp. z o.o.) - w celu zawierania umów o dzieło z przeniesieniem praw autorskich i wystawiania faktur VAT Klientom, co wiąże się z realizacją płatności i wymogami prawa podatkowego.</li>
-                <li>dostawcom systemów do analityki (np. Google).</li>
+                <li><strong>Operatorom płatności elektronicznych:</strong> w szczególności <strong>Stripe Technology Europe, Limited / Stripe Payments Europe, Ltd.</strong> – w celu bezpiecznej obsługi płatności elektronicznych, transakcji kartowych, szybkiej autoryzacji oraz zarządzania cyklicznymi subskrypcjami.</li>
+                <li><strong>Dostawcom technologii systemów rezerwacji i Channel Manager:</strong> w szczególności <strong>Beds24</strong> oraz zintegrowanym portalom noclegowym OTA (np. Booking.com, Airbnb) – w zakresie niezbędnym do technicznego wdrożenia silnika rezerwacji, synchronizacji kalendarzy i obsługi rezerwacji bezpośrednich.</li>
+                <li><strong>Dostawcom infrastruktury serwerowej i teleinformatycznej:</strong> wyspecjalizowanym dostawcom zapewniającym bezpieczny hosting, certyfikację SSL/TLS, ciągłość działania sieci oraz obsługę poczty elektronicznej.</li>
+                <li><strong>Dostawcom narzędzi analitycznych:</strong> (np. Google Ireland Limited) w celach statystycznych, wyłącznie za zgodą Użytkownika.</li>
               </ul>
-              <p>Podmioty te przetwarzają dane wyłącznie na podstawie umowy powierzenia lub zaakceptowanych przez Użytkownika regulaminów platform pośredniczących.</p>
+              <p>Wszyscy odbiorcy przetwarzają dane w oparciu o restrykcyjne umowy powierzenia przetwarzania danych oraz rygorystyczne standardy bezpieczeństwa zgodne z RODO.</p>
             </section>
 
             <section className={styles.section}>
               <h2>8. Zmiany w Polityce Prywatności</h2>
-              <p>Administrator zastrzega sobie prawo do wprowadzania zmian w Polityce Prywatności. O wszelkich zmianach Użytkownicy będą informowani poprzez publikację nowej wersji dokumentu na stronie internetowej.</p>
+              <p>Administrator zastrzega sobie prawo do aktualizacji Polityki Prywatności w przypadku zmian technologicznych lub prawnych. Aktualna wersja dokumentu jest zawsze publikowana na niniejszej podstronie.</p>
             </section>
           </div>
         </div>
